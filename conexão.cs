@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Data.SqlTypes;
 using System.Data;
-//teste braçofabio teste carlos
+//teste braçofabio teste carlos teste permissao
 namespace TrabalhoAlg3
 {
     class Conexão
