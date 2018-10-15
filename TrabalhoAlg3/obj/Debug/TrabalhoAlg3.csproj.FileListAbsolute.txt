@@ -18,3 +18,13 @@ C:\Users\fabio\Desktop\alg3\TrabalhoAlg3\TrabalhoAlg3\obj\Debug\TrabalhoAlg3.csp
 C:\Users\fabio\Desktop\alg3\TrabalhoAlg3\TrabalhoAlg3\obj\Debug\TrabalhoAlg3.csproj.CoreCompileInputs.cache
 C:\Users\fabio\Desktop\alg3\TrabalhoAlg3\TrabalhoAlg3\obj\Debug\TrabalhoAlg3.exe
 C:\Users\fabio\Desktop\alg3\TrabalhoAlg3\TrabalhoAlg3\obj\Debug\TrabalhoAlg3.pdb
+C:\Users\fabio\Desktop\Git\FabioDev\TrabalhoAlg33\TrabalhoAlg3\bin\Debug\TrabalhoAlg3.exe.config
+C:\Users\fabio\Desktop\Git\FabioDev\TrabalhoAlg33\TrabalhoAlg3\bin\Debug\TrabalhoAlg3.exe
+C:\Users\fabio\Desktop\Git\FabioDev\TrabalhoAlg33\TrabalhoAlg3\bin\Debug\TrabalhoAlg3.pdb
+C:\Users\fabio\Desktop\Git\FabioDev\TrabalhoAlg33\TrabalhoAlg3\obj\Debug\TrabalhoAlg3.csprojResolveAssemblyReference.cache
+C:\Users\fabio\Desktop\Git\FabioDev\TrabalhoAlg33\TrabalhoAlg3\obj\Debug\TrabalhoAlg3.cadastro.resources
+C:\Users\fabio\Desktop\Git\FabioDev\TrabalhoAlg33\TrabalhoAlg3\obj\Debug\TrabalhoAlg3.Properties.Resources.resources
+C:\Users\fabio\Desktop\Git\FabioDev\TrabalhoAlg33\TrabalhoAlg3\obj\Debug\TrabalhoAlg3.csproj.GenerateResource.cache
+C:\Users\fabio\Desktop\Git\FabioDev\TrabalhoAlg33\TrabalhoAlg3\obj\Debug\TrabalhoAlg3.csproj.CoreCompileInputs.cache
+C:\Users\fabio\Desktop\Git\FabioDev\TrabalhoAlg33\TrabalhoAlg3\obj\Debug\TrabalhoAlg3.exe
+C:\Users\fabio\Desktop\Git\FabioDev\TrabalhoAlg33\TrabalhoAlg3\obj\Debug\TrabalhoAlg3.pdb
