@@ -25,6 +25,7 @@ namespace TrabalhoAlg3
             Comando.Parameters.Add("@Cpf", Cpf);
             Comando.Parameters.Add("@Rg", Rg);
             Comando.Parameters.Add("@Telefone", Telefone);
+            //teste git
 
             try
             {
