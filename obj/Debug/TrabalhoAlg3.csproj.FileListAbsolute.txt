@@ -1,0 +1,10 @@
+c:\users\fabio\source\repos\TrabalhoAlg3\TrabalhoAlg3\bin\Debug\TrabalhoAlg3.exe.config
+c:\users\fabio\source\repos\TrabalhoAlg3\TrabalhoAlg3\bin\Debug\TrabalhoAlg3.exe
+c:\users\fabio\source\repos\TrabalhoAlg3\TrabalhoAlg3\bin\Debug\TrabalhoAlg3.pdb
+c:\users\fabio\source\repos\TrabalhoAlg3\TrabalhoAlg3\obj\Debug\TrabalhoAlg3.csprojResolveAssemblyReference.cache
+c:\users\fabio\source\repos\TrabalhoAlg3\TrabalhoAlg3\obj\Debug\TrabalhoAlg3.Properties.Resources.resources
+c:\users\fabio\source\repos\TrabalhoAlg3\TrabalhoAlg3\obj\Debug\TrabalhoAlg3.csproj.GenerateResource.cache
+c:\users\fabio\source\repos\TrabalhoAlg3\TrabalhoAlg3\obj\Debug\TrabalhoAlg3.csproj.CoreCompileInputs.cache
+c:\users\fabio\source\repos\TrabalhoAlg3\TrabalhoAlg3\obj\Debug\TrabalhoAlg3.exe
+c:\users\fabio\source\repos\TrabalhoAlg3\TrabalhoAlg3\obj\Debug\TrabalhoAlg3.pdb
+c:\users\fabio\source\repos\TrabalhoAlg3\TrabalhoAlg3\obj\Debug\TrabalhoAlg3.cadastro.resources
