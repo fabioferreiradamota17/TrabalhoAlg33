@@ -355,7 +355,16 @@ namespace TrabalhoAlg3
 
         private void Btn_Cadastro_Monitor_Click(object sender, EventArgs e)
         {
+            Monitor Cmonitor = new Monitor();
+            Conexão conect = new Conexão();
+            Cmonitor.cpf = Txt_Monitor_Cpf.Text;
+            Cmonitor.rg = Txt_monitor_Rg.Text;
+            Cmonitor.telefone = TxT_Monitor_Telefone.Text;
+            Cmonitor.disciplina = Txt_Monitor_Diciplina.Text;
+            Cmonitor.CargaHoraria = Convert.ToInt32(Txt_Monitor_Cargah.Text);
+            Cmonitor.nome = Txt_Monitor_Nome.Text;
 
+            conect.Cadastrar_Monitor(Cmonitor);
         }
     }
 }

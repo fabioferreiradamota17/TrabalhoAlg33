@@ -159,5 +159,9 @@ namespace TrabalhoAlg3//carlos
                 throw;
             }
         }
+        public void Cadastrar_Monitor(Monitor moni)
+        {
+
+        }
     }
 }

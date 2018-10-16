@@ -9,6 +9,7 @@ namespace TrabalhoAlg3
     class Monitor : Aluno
     {
         private string _mDisciplina;
+        private int _CargaHoraria;
 
         public string disciplina
         {
@@ -19,6 +20,17 @@ namespace TrabalhoAlg3
             set
             {
                 _mDisciplina = value;
+            }
+        }
+        public int CargaHoraria
+        {
+            get
+            {
+                return _CargaHoraria;
+            }
+            set
+            {
+                _CargaHoraria = value;
             }
         }
     }
