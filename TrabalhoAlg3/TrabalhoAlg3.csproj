@@ -76,6 +76,8 @@
     <Compile Include="conexão.cs" />
     <Compile Include="Coordenador.cs" />
     <Compile Include="Cursos.cs" />
+    <Compile Include="Escrita.cs" />
+    <Compile Include="Leitura.cs" />
     <Compile Include="Monitor.cs" />
     <Compile Include="Professor.cs" />
     <Compile Include="Program.cs" />
