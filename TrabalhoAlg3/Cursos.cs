@@ -9,7 +9,11 @@ namespace TrabalhoAlg3
     public class Cursos
     {
         private string _nome;
-        private string _carga;
+        private int _carga;
+        private int _vagas;
+        private int _professor;
+        private int _id_curso;
+
 
         public string nome
         {
@@ -19,11 +23,11 @@ namespace TrabalhoAlg3
             }
             set
             {
-                _nome = nome;
+                _nome = value;
             }
         }
 
-        public string carga
+        public int carga
         {
             get
             {
@@ -31,7 +35,40 @@ namespace TrabalhoAlg3
             }
             set
             {
-                _carga = carga;
+                _carga = value;
+            }
+        }
+        public int vagas
+        {
+            get
+            {
+                return _vagas;
+            }
+            set
+            {
+                _vagas = value;
+            }
+        }
+        public int professor
+        {
+            get
+            {
+                return _professor;
+            }
+            set
+            {
+                _professor = value;
+            }
+        }
+        public int Id_Curso
+        {
+            get
+            {
+                return _id_curso;
+            }
+            set
+            {
+                _id_curso = value;
             }
         }
     }

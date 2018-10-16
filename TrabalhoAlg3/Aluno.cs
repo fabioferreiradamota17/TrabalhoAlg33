@@ -19,7 +19,7 @@ namespace TrabalhoAlg3
             }
             set
             {
-                _curso = curso;
+                _curso = value;
             }
         }
 
@@ -31,7 +31,7 @@ namespace TrabalhoAlg3
             }
             set
             {
-                _matricula = matricula;
+                _matricula = value;
             }
         }
     }

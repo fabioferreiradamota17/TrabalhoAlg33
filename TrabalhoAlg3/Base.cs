@@ -21,7 +21,7 @@ namespace TrabalhoAlg3
             }
             set
             {
-                _nome = nome;
+                _nome = value;
             }
         }
 
@@ -33,7 +33,7 @@ namespace TrabalhoAlg3
             }
             set
             {
-                _cpf = cpf;
+                _cpf = value;
             }
         }
 
@@ -45,7 +45,7 @@ namespace TrabalhoAlg3
             }
             set
             {
-                _rg = rg;
+                _rg = value;
             }
         }
 
@@ -57,7 +57,7 @@ namespace TrabalhoAlg3
             }
             set
             {
-                _telefone = telefone;
+                _telefone = value;
             }
         }
 
