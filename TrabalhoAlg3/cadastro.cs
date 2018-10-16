@@ -224,9 +224,6 @@ namespace TrabalhoAlg3
             PnlCadastrar.Visible = false;
             PnlVisualisa.Visible = false;
             PnlArquivo.Visible = true;
-           
-
-
         }
 
         private void BtnEscrita_Click(object sender, EventArgs e)
