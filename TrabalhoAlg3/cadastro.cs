@@ -19,9 +19,6 @@ namespace TrabalhoAlg3
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            // TODO: esta linha de código carrega dados na tabela 'bANCOFABIODataSet.CLIENTES'. Você pode movê-la ou removê-la conforme necessário.
-            //this.cLIENTESTableAdapter.Fill(this.bANCOFABIODataSet.CLIENTES);
-
 
         }
 
@@ -191,22 +188,16 @@ namespace TrabalhoAlg3
                 catch (Exception)
                 {
                     MessageBox.Show("impossivel cadastrar");
-                    //throw;
                 }
-
-
-
             }
             else
             {
                 MessageBox.Show("Erro,todos os campos são obrigatorios!");
             }
         }
-
         private void BtnConsulta_Click(object sender, EventArgs e)
         {
             Conexão conectar = new Conexão();
-
             try
             {
                 DataTable tabela = new DataTable();
@@ -225,24 +216,15 @@ namespace TrabalhoAlg3
             {
                 throw;
             }
-
-
-
         }
-
         private void GridConsulta_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
         }
-
         private void LblConsulta_Click(object sender, EventArgs e)
         {
-
         }
-
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
-
         }
 
         private void Btn_Matricula_Click(object sender, EventArgs e)
@@ -252,52 +234,37 @@ namespace TrabalhoAlg3
                 Conexão Conectar = new Conexão();
                 Conectar.matricular(TXT_CPFM.Text, TXT_CODIGOM.Text);
                 MessageBox.Show("matricula Comcluida.");
-
             }
             catch (Exception ex)
             {
                 MessageBox.Show("não foi possivel matricular verifique os dados.");
-                //throw;
             }
-
-
         }
-
         private void Btn_Cancelar_Click(object sender, EventArgs e)
         {
             Conexão Conectar = new Conexão();
             Cursos curso = new Cursos();
             Aluno aluno = new Aluno();
-
-
             try
             {
                 curso.Id_Curso = Convert.ToInt32(Txt_codigo_cancelar.Text);
                 aluno.cpf = TXT_Cpf_Cancelar.Text;
                 Conectar.Cancelar(curso, aluno);
                 MessageBox.Show("cancelada com sucesso");
-
             }
             catch (Exception)
             {
                 MessageBox.Show("impossivel cancelar Dados não existem");
-                //throw;
             }
         }
-
         private void GridCurso_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            //grid cursos
         }
-
-
         private void BtnEscrita_Click(object sender, EventArgs e)
         {
             Escrita escrever = new Escrita();
             escrever.Escrever(TxtEscrita.Text);
-
         }
-
         private void BtnLer_Click(object sender, EventArgs e)
         {
             string Arquivo = "O arquivo esta vazio";
@@ -311,51 +278,38 @@ namespace TrabalhoAlg3
             {
                 TxTLeitura.Text = arquivo2;
             }
-
         }
-
         private void TxTLeitura_TextChanged(object sender, EventArgs e)
         {
-
         }
-
         private void Btn_Atualizar_Click(object sender, EventArgs e)
         {
             Aluno alunos = new Aluno();
             alunos.cpf = Txt_Up_Cpf.Text;
             alunos.telefone = Txt_Up_Telefone.Text;
             if (alunos.cpf != "" && alunos.telefone != "")
-
             {
-
                 try
                 {
                     Conexão Conectar = new Conexão();
                     Conectar.Atualizar_Telefone(alunos);
                     MessageBox.Show("Telefone Atualizado.");
-
                 }
                 catch (Exception ex)
                 {
                     MessageBox.Show("não foi possivel atualizar verifique os dados.");
-                    //throw;
                 }
             }
             else
             {
                 MessageBox.Show("preenchimento dos campos é obrigatorio");
             }
-
         }
-
         private void label13_Click(object sender, EventArgs e)
         {
-
         }
-
         private void Btn_Cadastro_Monitor_Click(object sender, EventArgs e)
         {
-
             try
             {
                 Monitor Cmonitor = new Monitor();
@@ -363,18 +317,15 @@ namespace TrabalhoAlg3
                 Cmonitor.CargaHoraria = Convert.ToInt32(Txt_Monitor_Cargah.Text);
                 try
                 {
-
                     Cmonitor.cpf = Txt_Monitor_Cpf.Text;
                     Cmonitor.rg = Txt_monitor_Rg.Text;
                     Cmonitor.telefone = TxT_Monitor_Telefone.Text;
                     Cmonitor.disciplina = Txt_Monitor_Diciplina.Text;
-
                     Cmonitor.nome = Txt_Monitor_Nome.Text;
                     if (Cmonitor.cpf != "" && Cmonitor.rg != "" && Cmonitor.telefone != "" && Cmonitor.disciplina != "" && Cmonitor.CargaHoraria != 0 && Cmonitor.nome != "")
                     {
-
                         conect.Cadastrar_Monitor(Cmonitor);
-                    MessageBox.Show("Cadastrado com sucesso");
+                        MessageBox.Show("Cadastrado com sucesso");
                     }
                     else
                     {
@@ -384,17 +335,12 @@ namespace TrabalhoAlg3
                 catch (Exception)
                 {
                     MessageBox.Show("preencha todos os campos corretamente.");
-
                 }
-
             }
             catch (Exception ex)
             {
                 MessageBox.Show("preencha os campos corretamente.");
-
             }
-
         }
-
     }
 }
