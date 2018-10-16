@@ -19,15 +19,16 @@ namespace TrabalhoAlg3//carlos
 
         string StrSql = string.Empty;
 
-        public void SalvarCadastro(string Nome, string Cpf, string Rg, string Telefone)
+        public void SalvarCadastro(Aluno C_Aluno)
         {
+            
             StrSql = "insert into cliente (Nome_cliente,Cpf,Rg,Telefone) values (@Nome,@Cpf,@Rg,@Telefone)";
             sqlcon = new SqlConnection(StrCon);
             SqlCommand Comando = new SqlCommand(StrSql, sqlcon);
-            Comando.Parameters.Add("@nome", Nome);
-            Comando.Parameters.Add("@Cpf", Cpf);
-            Comando.Parameters.Add("@Rg", Rg);
-            Comando.Parameters.Add("@Telefone", Telefone);
+            Comando.Parameters.Add("@nome",C_Aluno.nome );
+            Comando.Parameters.Add("@Cpf", C_Aluno.cpf);
+            Comando.Parameters.Add("@Rg", C_Aluno.rg);
+            Comando.Parameters.Add("@Telefone", C_Aluno.telefone);
             //teste git
 
             try

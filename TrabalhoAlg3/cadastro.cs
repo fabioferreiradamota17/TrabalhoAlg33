@@ -121,15 +121,33 @@ namespace TrabalhoAlg3
 
         private void Enviar_Click(object sender, EventArgs e)
         {
-            try
+            Aluno C_Aluno = new Aluno();
+            C_Aluno.nome = TxtNome.Text;
+            C_Aluno.cpf = TxtCpf.Text;
+            C_Aluno.rg = TxtRg.Text;
+            C_Aluno.telefone = TxtTelefone.Text;
+            if (C_Aluno.nome != "" && C_Aluno.cpf!="" && C_Aluno.rg != "" && C_Aluno.telefone != "")
             {
-                Conexão Conect = new Conexão();
-                Conect.SalvarCadastro(TxtNome.Text, TxtCpf.Text, TxtRg.Text, TxtTelefone.Text);
-                MessageBox.Show("cadastrado com sucesso");
+
+                try
+                {
+                    Conexão Conect = new Conexão();
+
+                    Conect.SalvarCadastro(C_Aluno);
+                    MessageBox.Show("cadastrado com sucesso");
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("impossivel cadastrar");
+                    //throw;
+                }
+
+
+
             }
-            catch (Exception)
+            else
             {
-                throw;
+                MessageBox.Show("Erro,todos os campos são obrigatorios!");
             }
         }
 
@@ -230,7 +248,7 @@ namespace TrabalhoAlg3
         {
             Escrita escrever = new Escrita();
             escrever.Escrever(TxtEscrita.Text);
-            
+
         }
 
         private void BtnLer_Click(object sender, EventArgs e)

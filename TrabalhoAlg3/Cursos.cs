@@ -9,7 +9,7 @@ namespace TrabalhoAlg3
     public class Cursos
     {
         private string _nome;
-        private string _carga;
+        private int _carga;
 
         public string nome
         {
@@ -23,7 +23,7 @@ namespace TrabalhoAlg3
             }
         }
 
-        public string carga
+        public int carga
         {
             get
             {
