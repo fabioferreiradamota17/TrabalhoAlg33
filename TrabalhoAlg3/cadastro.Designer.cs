@@ -547,7 +547,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.bANCOFABIODataSetBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cLIENTESBindingSource1)).EndInit();
             this.PnlInicial.ResumeLayout(false);
-            this.PnlInicial.PerformLayout();
             this.PnlVisualisa.ResumeLayout(false);
             this.PnlVisualisa.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GridConsultas)).EndInit();

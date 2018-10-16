@@ -72,7 +72,6 @@ namespace TrabalhoAlg3
             }
             catch (Exception)
             {
-
                 throw;
             }
 
@@ -120,7 +119,6 @@ namespace TrabalhoAlg3
             }
             catch (Exception)
             {
-
                 throw;
             }
         }
@@ -145,12 +143,8 @@ namespace TrabalhoAlg3
             }
             catch (Exception)
             {
-
                 throw;
             }
-
-            
-            
         }
 
         private void GridConsulta_CellContentClick(object sender, DataGridViewCellEventArgs e)
