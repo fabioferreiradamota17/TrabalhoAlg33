@@ -10,6 +10,6 @@ namespace TrabalhoAlg3
 {
     class Leitura
     {
-        
+        string Caminho = "C:\\Users\\fabio\\Desktop\\Git\\FabioDev\\TrabalhoAlg33\\Escrita.txt";
     }
 }
