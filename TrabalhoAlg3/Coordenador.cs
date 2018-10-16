@@ -6,34 +6,33 @@ using System.Threading.Tasks;
 
 namespace TrabalhoAlg3
 {
-    public class Cursos
+    public class Coordenador : Professor
     {
-        private string _nome;
-        private string _carga;
+        private string _professor;
+        private string _curso;
 
-        public string nome
+        public string professor
         {
             get
             {
-                return _nome;
+                return _professor;
             }
             set
             {
-                _nome = nome;
+                _professor = professor;
             }
         }
 
-        public string carga
+        public string curso
         {
             get
             {
-                return _carga;
+                return _curso;
             }
             set
             {
-                _carga = carga;
+                _curso = curso;
             }
         }
     }
-
 }
