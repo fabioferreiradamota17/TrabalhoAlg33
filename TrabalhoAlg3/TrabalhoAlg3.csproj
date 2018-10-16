@@ -74,9 +74,10 @@
       <DependentUpon>cadastro.cs</DependentUpon>
     </Compile>
     <Compile Include="conexão.cs" />
-    <Compile Include="Escrita.cs" />
-    <Compile Include="Leitura.cs" />
+    <Compile Include="Coordenador.cs" />
     <Compile Include="Cursos.cs" />
+    <Compile Include="Monitor.cs" />
+    <Compile Include="Professor.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="cadastro.resx">
