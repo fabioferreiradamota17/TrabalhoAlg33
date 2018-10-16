@@ -21,8 +21,8 @@ namespace TrabalhoAlg3
         {
             // TODO: esta linha de código carrega dados na tabela 'bANCOFABIODataSet.CLIENTES'. Você pode movê-la ou removê-la conforme necessário.
             //this.cLIENTESTableAdapter.Fill(this.bANCOFABIODataSet.CLIENTES);
-           
-            
+
+
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -39,6 +39,8 @@ namespace TrabalhoAlg3
             PnlInicial.Visible = false;
             PnlCadastrar.Visible = false;
             PnlCMatricula.Visible = true;
+            PnlArquivo.Visible = false;
+
         }
 
         private void btnCad_Click(object sender, EventArgs e)//cadastro
@@ -50,7 +52,9 @@ namespace TrabalhoAlg3
             PnlCMatricula.Visible = false;
             PnlInicial.Visible = false;
             PnlCadastrar.Visible = true;
-           
+            PnlArquivo.Visible = false;
+
+
         }
 
         private void btnCurDis_Click(object sender, EventArgs e)//cursos
@@ -62,11 +66,13 @@ namespace TrabalhoAlg3
             PnlInicial.Visible = false;
             PnlCadastrar.Visible = false;
             PnlCursos.Visible = true;
+            PnlArquivo.Visible = false;
+
             Conexão conectar = new Conexão();
             DataTable tabela = new DataTable();
             try
             {
-                tabela =conectar.Cursos();
+                tabela = conectar.Cursos();
                 GridCurso.DataSource = (tabela);
                 GridCurso.Visible = true;
             }
@@ -91,6 +97,8 @@ namespace TrabalhoAlg3
             PnlInicial.Visible = false;
             PnlCadastrar.Visible = false;
             PnlMatricula.Visible = true;
+            PnlArquivo.Visible = false;
+
         }
 
         private void btnVisualizar_Click(object sender, EventArgs e)
@@ -102,6 +110,8 @@ namespace TrabalhoAlg3
             PnlInicial.Visible = false;
             PnlCadastrar.Visible = false;
             PnlVisualisa.Visible = true;
+            PnlArquivo.Visible = false;
+
         }
 
         private void Cursos_Paint(object sender, PaintEventArgs e)
@@ -113,8 +123,8 @@ namespace TrabalhoAlg3
         {
             try
             {
-            Conexão Conect = new Conexão();
-            Conect.SalvarCadastro(TxtNome.Text, TxtCpf.Text, TxtRg.Text, TxtTelefone.Text);
+                Conexão Conect = new Conexão();
+                Conect.SalvarCadastro(TxtNome.Text, TxtCpf.Text, TxtRg.Text, TxtTelefone.Text);
                 MessageBox.Show("cadastrado com sucesso");
             }
             catch (Exception)
@@ -126,15 +136,15 @@ namespace TrabalhoAlg3
         private void BtnConsulta_Click(object sender, EventArgs e)
         {
             Conexão conectar = new Conexão();
-            
+
             try
             {
                 DataTable tabela = new DataTable();
                 tabela = conectar.Consulta(textBox2.Text);
                 if (tabela.Rows.Count > 0)
                 {
-                GridConsultas.DataSource = (tabela);
-                GridConsultas.Visible = true;
+                    GridConsultas.DataSource = (tabela);
+                    GridConsultas.Visible = true;
                 }
                 else
                 {
@@ -145,6 +155,9 @@ namespace TrabalhoAlg3
             {
                 throw;
             }
+
+
+
         }
 
         private void GridConsulta_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -167,11 +180,11 @@ namespace TrabalhoAlg3
             try
             {
                 Conexão Conectar = new Conexão();
-               Conectar.matricular(TXT_CPFM.Text, TXT_CODIGOM.Text);
+                Conectar.matricular(TXT_CPFM.Text, TXT_CODIGOM.Text);
                 MessageBox.Show("matricula Comcluida.");
 
             }
-            catch (  Exception ex )
+            catch (Exception ex)
             {
                 MessageBox.Show("não foi possivel matricular verifique os dados.");
                 //throw;
@@ -185,7 +198,7 @@ namespace TrabalhoAlg3
             Conexão Conectar = new Conexão();
             try
             {
-            Conectar.Cancelar(Txt_codigo_cancelar.Text, TXT_Cpf_Cancelar.Text);
+                Conectar.Cancelar(Txt_codigo_cancelar.Text, TXT_Cpf_Cancelar.Text);
                 MessageBox.Show("cancelada com sucesso");
 
             }
@@ -199,6 +212,49 @@ namespace TrabalhoAlg3
         private void GridCurso_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             //grid cursos
+        }
+
+        private void BtnArquivo_Click(object sender, EventArgs e)
+        {
+            PnlInicial.Visible = false;
+            PnlCursos.Visible = false;
+            PnlMatricula.Visible = false;
+            PnlCMatricula.Visible = false;
+            PnlInicial.Visible = false;
+            PnlCadastrar.Visible = false;
+            PnlVisualisa.Visible = false;
+            PnlArquivo.Visible = true;
+           
+
+
+        }
+
+        private void BtnEscrita_Click(object sender, EventArgs e)
+        {
+            Escrita escrever = new Escrita();
+            escrever.Escrever(TxtEscrita.Text);
+            
+        }
+
+        private void BtnLer_Click(object sender, EventArgs e)
+        {
+            string Arquivo = "O arquivo esta vazio";
+            Leitura ler = new Leitura();
+            string arquivo2 = ler.Ler();
+            if (arquivo2.Length == 0)
+            {
+                TxTLeitura.Text = Arquivo;
+            }
+            else
+            {
+                TxTLeitura.Text = arquivo2;
+            }
+
+        }
+
+        private void TxTLeitura_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

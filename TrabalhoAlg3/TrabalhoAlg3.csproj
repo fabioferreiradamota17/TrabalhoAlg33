@@ -74,6 +74,8 @@
       <DependentUpon>cadastro.cs</DependentUpon>
     </Compile>
     <Compile Include="conexão.cs" />
+    <Compile Include="Escrita.cs" />
+    <Compile Include="Leitura.cs" />
     <Compile Include="Cursos.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
