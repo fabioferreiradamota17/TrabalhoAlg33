@@ -79,10 +79,10 @@
             this.label3 = new System.Windows.Forms.Label();
             this.BtnArquivo = new System.Windows.Forms.Button();
             this.PnlArquivo = new System.Windows.Forms.Panel();
-            this.BtnEscrita = new System.Windows.Forms.Button();
-            this.TxtEscrita = new System.Windows.Forms.TextBox();
-            this.BtnLer = new System.Windows.Forms.Button();
             this.TxTLeitura = new System.Windows.Forms.TextBox();
+            this.BtnLer = new System.Windows.Forms.Button();
+            this.TxtEscrita = new System.Windows.Forms.TextBox();
+            this.BtnEscrita = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.bANCOFABIODataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cLIENTESBindingSource)).BeginInit();
             this.PnlCadastrar.SuspendLayout();
@@ -120,7 +120,7 @@
             // 
             // btnMat
             // 
-            this.btnMat.Location = new System.Drawing.Point(354, 256);
+            this.btnMat.Location = new System.Drawing.Point(251, 263);
             this.btnMat.Name = "btnMat";
             this.btnMat.Size = new System.Drawing.Size(75, 23);
             this.btnMat.TabIndex = 0;
@@ -130,7 +130,7 @@
             // 
             // btnCurDis
             // 
-            this.btnCurDis.Location = new System.Drawing.Point(182, 256);
+            this.btnCurDis.Location = new System.Drawing.Point(133, 263);
             this.btnCurDis.Name = "btnCurDis";
             this.btnCurDis.Size = new System.Drawing.Size(75, 23);
             this.btnCurDis.TabIndex = 1;
@@ -140,7 +140,7 @@
             // 
             // btnCadMat
             // 
-            this.btnCadMat.Location = new System.Drawing.Point(532, 256);
+            this.btnCadMat.Location = new System.Drawing.Point(386, 263);
             this.btnCadMat.Name = "btnCadMat";
             this.btnCadMat.Size = new System.Drawing.Size(75, 23);
             this.btnCadMat.TabIndex = 2;
@@ -150,7 +150,7 @@
             // 
             // btnCad
             // 
-            this.btnCad.Location = new System.Drawing.Point(15, 256);
+            this.btnCad.Location = new System.Drawing.Point(17, 263);
             this.btnCad.Name = "btnCad";
             this.btnCad.Size = new System.Drawing.Size(75, 23);
             this.btnCad.TabIndex = 3;
@@ -264,7 +264,7 @@
             // 
             // btnVisualizar
             // 
-            this.btnVisualizar.Location = new System.Drawing.Point(697, 256);
+            this.btnVisualizar.Location = new System.Drawing.Point(670, 263);
             this.btnVisualizar.Name = "btnVisualizar";
             this.btnVisualizar.Size = new System.Drawing.Size(75, 23);
             this.btnVisualizar.TabIndex = 5;
@@ -524,7 +524,7 @@
             // 
             // BtnArquivo
             // 
-            this.BtnArquivo.Location = new System.Drawing.Point(621, 263);
+            this.BtnArquivo.Location = new System.Drawing.Point(532, 263);
             this.BtnArquivo.Name = "BtnArquivo";
             this.BtnArquivo.Size = new System.Drawing.Size(75, 23);
             this.BtnArquivo.TabIndex = 14;
@@ -533,7 +533,6 @@
             this.BtnArquivo.Click += new System.EventHandler(this.BtnArquivo_Click);
             // 
             // PnlArquivo
-            // label6
             // 
             this.PnlArquivo.Controls.Add(this.TxTLeitura);
             this.PnlArquivo.Controls.Add(this.BtnLer);
@@ -544,44 +543,17 @@
             this.PnlArquivo.Size = new System.Drawing.Size(756, 248);
             this.PnlArquivo.TabIndex = 6;
             this.PnlArquivo.Visible = false;
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(24, 54);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(30, 13);
-            this.label6.TabIndex = 4;
-            this.label6.Text = "CPF.";
             // 
-            // BtnEscrita
-            // label5
+            // TxTLeitura
             // 
-            this.BtnEscrita.Location = new System.Drawing.Point(111, 197);
-            this.BtnEscrita.Name = "BtnEscrita";
-            this.BtnEscrita.Size = new System.Drawing.Size(75, 23);
-            this.BtnEscrita.TabIndex = 0;
-            this.BtnEscrita.Text = "Escrever";
-            this.BtnEscrita.UseVisualStyleBackColor = true;
-            this.BtnEscrita.Click += new System.EventHandler(this.BtnEscrita_Click);
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(24, 103);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(43, 13);
-            this.label5.TabIndex = 3;
-            this.label5.Text = "Código.";
+            this.TxTLeitura.Location = new System.Drawing.Point(416, 42);
+            this.TxTLeitura.Multiline = true;
+            this.TxTLeitura.Name = "TxTLeitura";
+            this.TxTLeitura.ReadOnly = true;
+            this.TxTLeitura.Size = new System.Drawing.Size(263, 149);
+            this.TxTLeitura.TabIndex = 3;
+            this.TxTLeitura.TextChanged += new System.EventHandler(this.TxTLeitura_TextChanged);
             // 
-            // TxtEscrita
-            // TXT_CODIGOM
-            // 
-            this.TxtEscrita.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
-            this.TxtEscrita.Location = new System.Drawing.Point(53, 58);
-            this.TxtEscrita.Name = "TxtEscrita";
-            this.TxtEscrita.Size = new System.Drawing.Size(196, 26);
-            this.TxtEscrita.TabIndex = 1;
-            this.TXT_CODIGOM.Location = new System.Drawing.Point(76, 95);
-            this.TXT_CODIGOM.Name = "TXT_CODIGOM";
-            this.TXT_CODIGOM.Size = new System.Drawing.Size(100, 20);
-            this.TXT_CODIGOM.TabIndex = 2;
-            // 
-            // TXT_CPFM
             // BtnLer
             // 
             this.BtnLer.Location = new System.Drawing.Point(524, 205);
@@ -591,27 +563,24 @@
             this.BtnLer.Text = "Ler";
             this.BtnLer.UseVisualStyleBackColor = true;
             this.BtnLer.Click += new System.EventHandler(this.BtnLer_Click);
-            this.TXT_CPFM.Location = new System.Drawing.Point(76, 54);
-            this.TXT_CPFM.Name = "TXT_CPFM";
-            this.TXT_CPFM.Size = new System.Drawing.Size(100, 20);
-            this.TXT_CPFM.TabIndex = 1;
             // 
-            // TxTLeitura
-            // label3
+            // TxtEscrita
             // 
-            this.TxTLeitura.Location = new System.Drawing.Point(416, 42);
-            this.TxTLeitura.Multiline = true;
-            this.TxTLeitura.Name = "TxTLeitura";
-            this.TxTLeitura.ReadOnly = true;
-            this.TxTLeitura.Size = new System.Drawing.Size(263, 149);
-            this.TxTLeitura.TabIndex = 3;
-            this.TxTLeitura.TextChanged += new System.EventHandler(this.TxTLeitura_TextChanged);
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(14, 21);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(276, 13);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Digite o Cpf e o codigo do curso para efetuar a matricula.";
+            this.TxtEscrita.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
+            this.TxtEscrita.Location = new System.Drawing.Point(53, 58);
+            this.TxtEscrita.Name = "TxtEscrita";
+            this.TxtEscrita.Size = new System.Drawing.Size(196, 26);
+            this.TxtEscrita.TabIndex = 1;
+            // 
+            // BtnEscrita
+            // 
+            this.BtnEscrita.Location = new System.Drawing.Point(111, 197);
+            this.BtnEscrita.Name = "BtnEscrita";
+            this.BtnEscrita.Size = new System.Drawing.Size(75, 23);
+            this.BtnEscrita.TabIndex = 0;
+            this.BtnEscrita.Text = "Escrever";
+            this.BtnEscrita.UseVisualStyleBackColor = true;
+            this.BtnEscrita.Click += new System.EventHandler(this.BtnEscrita_Click);
             // 
             // cadastro
             // 
