@@ -30,7 +30,7 @@ namespace TrabalhoAlg3
 
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void btnCadMat_Click(object sender, EventArgs e)
         {
             PnlInicial.Visible = false;
             PnlCursos.Visible = false;
@@ -43,7 +43,7 @@ namespace TrabalhoAlg3
 
         }
 
-        private void button4_Click(object sender, EventArgs e)//cadastro
+        private void btnCad_Click(object sender, EventArgs e)//cadastro
         {
             PnlInicial.Visible = false;
             PnlCursos.Visible = false;
@@ -57,7 +57,7 @@ namespace TrabalhoAlg3
 
         }
 
-        private void button2_Click(object sender, EventArgs e)//cursos
+        private void btnCurDis_Click(object sender, EventArgs e)//cursos
         {
             PnlInicial.Visible = false;
             PnlVisualisa.Visible = false;
@@ -78,7 +78,6 @@ namespace TrabalhoAlg3
             }
             catch (Exception)
             {
-
                 throw;
             }
 
@@ -89,7 +88,7 @@ namespace TrabalhoAlg3
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnMat_Click(object sender, EventArgs e)
         {
             PnlInicial.Visible = false;
             PnlCursos.Visible = false;
@@ -102,7 +101,7 @@ namespace TrabalhoAlg3
 
         }
 
-        private void Visualizar_Click(object sender, EventArgs e)
+        private void btnVisualizar_Click(object sender, EventArgs e)
         {
             PnlInicial.Visible = false;
             PnlCursos.Visible = false;
@@ -130,7 +129,6 @@ namespace TrabalhoAlg3
             }
             catch (Exception)
             {
-
                 throw;
             }
         }
@@ -155,7 +153,6 @@ namespace TrabalhoAlg3
             }
             catch (Exception)
             {
-
                 throw;
             }
 
@@ -227,9 +224,6 @@ namespace TrabalhoAlg3
             PnlCadastrar.Visible = false;
             PnlVisualisa.Visible = false;
             PnlArquivo.Visible = true;
-           
-
-
         }
 
         private void BtnEscrita_Click(object sender, EventArgs e)
