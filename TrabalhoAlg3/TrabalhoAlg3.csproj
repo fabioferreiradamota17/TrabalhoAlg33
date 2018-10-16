@@ -60,11 +60,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Aluno.cs" />
     <Compile Include="BANCOFABIODataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>BANCOFABIODataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Base.cs" />
     <Compile Include="cadastro.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,6 +74,7 @@
       <DependentUpon>cadastro.cs</DependentUpon>
     </Compile>
     <Compile Include="conexão.cs" />
+    <Compile Include="Cursos.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="cadastro.resx">
