@@ -161,6 +161,26 @@ namespace TrabalhoAlg3//carlos
         }
         public void Cadastrar_Monitor(Monitor moni)
         {
+            StrSql = "insert into monitor (nome,cpf,rg,telefone,diciplina,cargahoraria) values (@nome,@cpf,@rg,@telefone,@diciplina,@cargahoraria)";
+            sqlcon = new SqlConnection(StrCon);
+            SqlCommand Comando = new SqlCommand(StrSql, sqlcon);
+            Comando.Parameters.Add("@Telefone", moni.telefone);
+            Comando.Parameters.Add("@Cpf", moni.cpf);
+            Comando.Parameters.Add("@rg", moni.rg);
+            Comando.Parameters.Add("@nome", moni.nome);
+            Comando.Parameters.Add("@diciplina", moni.disciplina);
+            Comando.Parameters.Add("@cargahoraria", moni.CargaHoraria);
+
+            try
+            {
+                sqlcon.Open();
+                Comando.ExecuteNonQuery();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
 
         }
     }
