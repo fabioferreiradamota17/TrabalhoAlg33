@@ -96,13 +96,13 @@ namespace TrabalhoAlg3//carlos
             }
 
         }
-        public void Cancelar(string id_curso, string Cpf)
+        public void Cancelar(Cursos id_curso, Aluno Cpf)
         {
             StrSql = "delete CursosMatriculados where Id_Curso = @id_Curso and cpf=@cpf";
             sqlcon = new SqlConnection(StrCon);
             SqlCommand Comando = new SqlCommand(StrSql, sqlcon);
-            Comando.Parameters.Add("@id_Curso", int.Parse(id_curso));
-            Comando.Parameters.Add("@Cpf", Cpf);
+            Comando.Parameters.Add("@id_Curso", id_curso.Id_Curso);
+            Comando.Parameters.Add("@Cpf",Cpf.cpf);
 
             try
             {
@@ -139,6 +139,25 @@ namespace TrabalhoAlg3//carlos
                 throw;
             }
 
+        }
+        public void Atualizar_Telefone(Aluno aluno)
+        {
+            StrSql = "update cliente set Telefone= @telefone where cpf =@cpf";
+            sqlcon = new SqlConnection(StrCon);
+            SqlCommand Comando = new SqlCommand(StrSql, sqlcon);
+            Comando.Parameters.Add("@Telefone", aluno.telefone);
+            Comando.Parameters.Add("@Cpf", aluno.cpf);
+
+            try
+            {
+                sqlcon.Open();
+                Comando.ExecuteNonQuery();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
     }
 }

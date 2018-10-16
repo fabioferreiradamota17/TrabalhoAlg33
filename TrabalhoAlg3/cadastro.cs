@@ -39,6 +39,8 @@ namespace TrabalhoAlg3
             PnlInicial.Visible = false;
             PnlCadastrar.Visible = false;
             PnlCMatricula.Visible = true;
+            Pnl_Atualiza.Visible = false;
+            Pnl_Monitor.Visible = false;
             PnlArquivo.Visible = false;
 
         }
@@ -52,6 +54,8 @@ namespace TrabalhoAlg3
             PnlCMatricula.Visible = false;
             PnlInicial.Visible = false;
             PnlCadastrar.Visible = true;
+            Pnl_Atualiza.Visible = false;
+            Pnl_Monitor.Visible = false;
             PnlArquivo.Visible = false;
 
 
@@ -66,6 +70,8 @@ namespace TrabalhoAlg3
             PnlInicial.Visible = false;
             PnlCadastrar.Visible = false;
             PnlCursos.Visible = true;
+            Pnl_Atualiza.Visible = false;
+            Pnl_Monitor.Visible = false;
             PnlArquivo.Visible = false;
 
             Conexão conectar = new Conexão();
@@ -80,6 +86,34 @@ namespace TrabalhoAlg3
             {
                 throw;
             }
+
+        }
+        private void BtnTelefone_Click(object sender, EventArgs e)
+        {
+            PnlInicial.Visible = false;
+            PnlCursos.Visible = false;
+            PnlMatricula.Visible = false;
+            PnlCMatricula.Visible = false;
+            PnlInicial.Visible = false;
+            PnlCadastrar.Visible = false;
+            PnlVisualisa.Visible = false;
+            PnlArquivo.Visible = false;
+            Pnl_Monitor.Visible = false;
+            Pnl_Atualiza.Visible = true;
+        }
+
+        private void Btn_Cad_Monitor_Click(object sender, EventArgs e)
+        {
+            PnlInicial.Visible = false;
+            PnlCursos.Visible = false;
+            PnlMatricula.Visible = false;
+            PnlCMatricula.Visible = false;
+            PnlInicial.Visible = false;
+            PnlCadastrar.Visible = false;
+            PnlVisualisa.Visible = false;
+            PnlArquivo.Visible = false;
+            Pnl_Atualiza.Visible = false;
+            Pnl_Monitor.Visible = true;
 
         }
 
@@ -97,6 +131,8 @@ namespace TrabalhoAlg3
             PnlInicial.Visible = false;
             PnlCadastrar.Visible = false;
             PnlMatricula.Visible = true;
+            Pnl_Atualiza.Visible = false;
+            Pnl_Monitor.Visible = false;
             PnlArquivo.Visible = false;
 
         }
@@ -109,10 +145,26 @@ namespace TrabalhoAlg3
             PnlCMatricula.Visible = false;
             PnlInicial.Visible = false;
             PnlCadastrar.Visible = false;
+            Pnl_Atualiza.Visible = false;
             PnlVisualisa.Visible = true;
+            Pnl_Monitor.Visible = false;
             PnlArquivo.Visible = false;
 
         }
+        private void BtnArquivo_Click(object sender, EventArgs e)
+        {
+            PnlInicial.Visible = false;
+            PnlCursos.Visible = false;
+            PnlMatricula.Visible = false;
+            PnlCMatricula.Visible = false;
+            PnlInicial.Visible = false;
+            PnlCadastrar.Visible = false;
+            PnlVisualisa.Visible = false;
+            Pnl_Atualiza.Visible = false;
+            Pnl_Monitor.Visible = false;
+            PnlArquivo.Visible = true;
+        }
+
 
         private void Cursos_Paint(object sender, PaintEventArgs e)
         {
@@ -126,7 +178,7 @@ namespace TrabalhoAlg3
             C_Aluno.cpf = TxtCpf.Text;
             C_Aluno.rg = TxtRg.Text;
             C_Aluno.telefone = TxtTelefone.Text;
-            if (C_Aluno.nome != "" && C_Aluno.cpf!="" && C_Aluno.rg != "" && C_Aluno.telefone != "")
+            if (C_Aluno.nome != "" && C_Aluno.cpf != "" && C_Aluno.rg != "" && C_Aluno.telefone != "")
             {
 
                 try
@@ -214,9 +266,15 @@ namespace TrabalhoAlg3
         private void Btn_Cancelar_Click(object sender, EventArgs e)
         {
             Conexão Conectar = new Conexão();
+            Cursos curso = new Cursos();
+            Aluno aluno = new Aluno();
+
+
             try
             {
-                Conectar.Cancelar(Txt_codigo_cancelar.Text, TXT_Cpf_Cancelar.Text);
+                curso.Id_Curso = Convert.ToInt32(Txt_codigo_cancelar.Text);
+                aluno.cpf = TXT_Cpf_Cancelar.Text;
+                Conectar.Cancelar(curso, aluno);
                 MessageBox.Show("cancelada com sucesso");
 
             }
@@ -232,18 +290,7 @@ namespace TrabalhoAlg3
             //grid cursos
         }
 
-        private void BtnArquivo_Click(object sender, EventArgs e)
-        {
-            PnlInicial.Visible = false;
-            PnlCursos.Visible = false;
-            PnlMatricula.Visible = false;
-            PnlCMatricula.Visible = false;
-            PnlInicial.Visible = false;
-            PnlCadastrar.Visible = false;
-            PnlVisualisa.Visible = false;
-            PnlArquivo.Visible = true;
-        }
-
+      
         private void BtnEscrita_Click(object sender, EventArgs e)
         {
             Escrita escrever = new Escrita();
@@ -268,6 +315,45 @@ namespace TrabalhoAlg3
         }
 
         private void TxTLeitura_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Btn_Atualizar_Click(object sender, EventArgs e)
+        {
+            Aluno alunos = new Aluno();
+            alunos.cpf = Txt_Up_Cpf.Text;
+            alunos.telefone = Txt_Up_Telefone.Text;
+            if (alunos.cpf != "" && alunos.telefone != "")
+
+            {
+
+                try
+                {
+                    Conexão Conectar = new Conexão();
+                    Conectar.Atualizar_Telefone(alunos);
+                    MessageBox.Show("Telefone Atualizado.");
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("não foi possivel atualizar verifique os dados.");
+                    //throw;
+                }
+            }
+            else
+            {
+                MessageBox.Show("preenchimento dos campos é obrigatorio");
+            }
+
+        }
+
+        private void label13_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Btn_Cadastro_Monitor_Click(object sender, EventArgs e)
         {
 
         }

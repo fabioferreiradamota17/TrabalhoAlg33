@@ -47,7 +47,6 @@
             this.RG = new System.Windows.Forms.Label();
             this.Telefone = new System.Windows.Forms.Label();
             this.nome = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.TxtNome = new System.Windows.Forms.TextBox();
             this.btnVisualizar = new System.Windows.Forms.Button();
             this.PnlCursos = new System.Windows.Forms.Panel();
@@ -83,6 +82,28 @@
             this.BtnLer = new System.Windows.Forms.Button();
             this.TxtEscrita = new System.Windows.Forms.TextBox();
             this.BtnEscrita = new System.Windows.Forms.Button();
+            this.BtnTelefone = new System.Windows.Forms.Button();
+            this.Pnl_Atualiza = new System.Windows.Forms.Panel();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.Txt_Up_Telefone = new System.Windows.Forms.TextBox();
+            this.Txt_Up_Cpf = new System.Windows.Forms.TextBox();
+            this.Btn_Atualizar = new System.Windows.Forms.Button();
+            this.Pnl_Monitor = new System.Windows.Forms.Panel();
+            this.Btn_Cadastro_Monitor = new System.Windows.Forms.Button();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.Txt_Monitor_Cargah = new System.Windows.Forms.TextBox();
+            this.Txt_Monitor_Diciplina = new System.Windows.Forms.TextBox();
+            this.TxT_Monitor_Telefone = new System.Windows.Forms.TextBox();
+            this.Txt_monitor_Rg = new System.Windows.Forms.TextBox();
+            this.Txt_Monitor_Cpf = new System.Windows.Forms.TextBox();
+            this.Txt_Monitor_Nome = new System.Windows.Forms.TextBox();
+            this.Btn_Cad_Monitor = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.bANCOFABIODataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cLIENTESBindingSource)).BeginInit();
             this.PnlCadastrar.SuspendLayout();
@@ -96,6 +117,8 @@
             this.PnlCMatricula.SuspendLayout();
             this.PnlMatricula.SuspendLayout();
             this.PnlArquivo.SuspendLayout();
+            this.Pnl_Atualiza.SuspendLayout();
+            this.Pnl_Monitor.SuspendLayout();
             this.SuspendLayout();
             // 
             // bANCOFABIODataSet
@@ -120,7 +143,7 @@
             // 
             // btnMat
             // 
-            this.btnMat.Location = new System.Drawing.Point(312, 263);
+            this.btnMat.Location = new System.Drawing.Point(174, 263);
             this.btnMat.Name = "btnMat";
             this.btnMat.Size = new System.Drawing.Size(75, 23);
             this.btnMat.TabIndex = 0;
@@ -130,7 +153,7 @@
             // 
             // btnCurDis
             // 
-            this.btnCurDis.Location = new System.Drawing.Point(158, 263);
+            this.btnCurDis.Location = new System.Drawing.Point(93, 263);
             this.btnCurDis.Name = "btnCurDis";
             this.btnCurDis.Size = new System.Drawing.Size(75, 23);
             this.btnCurDis.TabIndex = 1;
@@ -140,7 +163,7 @@
             // 
             // btnCadMat
             // 
-            this.btnCadMat.Location = new System.Drawing.Point(434, 263);
+            this.btnCadMat.Location = new System.Drawing.Point(255, 263);
             this.btnCadMat.Name = "btnCadMat";
             this.btnCadMat.Size = new System.Drawing.Size(75, 23);
             this.btnCadMat.TabIndex = 2;
@@ -168,7 +191,6 @@
             this.PnlCadastrar.Controls.Add(this.RG);
             this.PnlCadastrar.Controls.Add(this.Telefone);
             this.PnlCadastrar.Controls.Add(this.nome);
-            this.PnlCadastrar.Controls.Add(this.label1);
             this.PnlCadastrar.Controls.Add(this.TxtNome);
             this.PnlCadastrar.Location = new System.Drawing.Point(23, 12);
             this.PnlCadastrar.Name = "PnlCadastrar";
@@ -244,17 +266,6 @@
             this.nome.TabIndex = 2;
             this.nome.Text = "Nome";
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
-            this.label1.Location = new System.Drawing.Point(3, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(743, 20);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Preencha os campos com  as informações do cliente e clique em  \"enviar\" para efet" +
-    "uar o cadastro";
-            // 
             // TxtNome
             // 
             this.TxtNome.Location = new System.Drawing.Point(179, 45);
@@ -264,7 +275,7 @@
             // 
             // btnVisualizar
             // 
-            this.btnVisualizar.Location = new System.Drawing.Point(672, 263);
+            this.btnVisualizar.Location = new System.Drawing.Point(417, 263);
             this.btnVisualizar.Name = "btnVisualizar";
             this.btnVisualizar.Size = new System.Drawing.Size(75, 23);
             this.btnVisualizar.TabIndex = 5;
@@ -276,7 +287,7 @@
             // 
             this.PnlCursos.Controls.Add(this.GridCurso);
             this.PnlCursos.Controls.Add(this.labelCursos);
-            this.PnlCursos.Location = new System.Drawing.Point(36, 12);
+            this.PnlCursos.Location = new System.Drawing.Point(70, 9);
             this.PnlCursos.Name = "PnlCursos";
             this.PnlCursos.Size = new System.Drawing.Size(757, 238);
             this.PnlCursos.TabIndex = 10;
@@ -315,7 +326,7 @@
             // PnlInicial
             // 
             this.PnlInicial.Controls.Add(this.lblInicial);
-            this.PnlInicial.Location = new System.Drawing.Point(39, 12);
+            this.PnlInicial.Location = new System.Drawing.Point(78, 12);
             this.PnlInicial.Name = "PnlInicial";
             this.PnlInicial.Size = new System.Drawing.Size(757, 238);
             this.PnlInicial.TabIndex = 3;
@@ -336,7 +347,7 @@
             this.PnlVisualisa.Controls.Add(this.BtnConsulta);
             this.PnlVisualisa.Controls.Add(this.textBox2);
             this.PnlVisualisa.Controls.Add(this.label2);
-            this.PnlVisualisa.Location = new System.Drawing.Point(12, 19);
+            this.PnlVisualisa.Location = new System.Drawing.Point(32, 12);
             this.PnlVisualisa.Name = "PnlVisualisa";
             this.PnlVisualisa.Size = new System.Drawing.Size(760, 238);
             this.PnlVisualisa.TabIndex = 11;
@@ -400,7 +411,7 @@
             this.PnlCMatricula.Controls.Add(this.Txt_codigo_cancelar);
             this.PnlCMatricula.Controls.Add(this.TXT_Cpf_Cancelar);
             this.PnlCMatricula.Controls.Add(this.label4);
-            this.PnlCMatricula.Location = new System.Drawing.Point(17, 12);
+            this.PnlCMatricula.Location = new System.Drawing.Point(43, 12);
             this.PnlCMatricula.Name = "PnlCMatricula";
             this.PnlCMatricula.Size = new System.Drawing.Size(770, 245);
             this.PnlCMatricula.TabIndex = 12;
@@ -465,7 +476,7 @@
             this.PnlMatricula.Controls.Add(this.TXT_CODIGOM);
             this.PnlMatricula.Controls.Add(this.TXT_CPFM);
             this.PnlMatricula.Controls.Add(this.label3);
-            this.PnlMatricula.Location = new System.Drawing.Point(8, 6);
+            this.PnlMatricula.Location = new System.Drawing.Point(43, 12);
             this.PnlMatricula.Name = "PnlMatricula";
             this.PnlMatricula.Size = new System.Drawing.Size(761, 248);
             this.PnlMatricula.TabIndex = 13;
@@ -524,7 +535,7 @@
             // 
             // BtnArquivo
             // 
-            this.BtnArquivo.Location = new System.Drawing.Point(561, 263);
+            this.BtnArquivo.Location = new System.Drawing.Point(336, 263);
             this.BtnArquivo.Name = "BtnArquivo";
             this.BtnArquivo.Size = new System.Drawing.Size(75, 23);
             this.BtnArquivo.TabIndex = 14;
@@ -538,7 +549,7 @@
             this.PnlArquivo.Controls.Add(this.BtnLer);
             this.PnlArquivo.Controls.Add(this.TxtEscrita);
             this.PnlArquivo.Controls.Add(this.BtnEscrita);
-            this.PnlArquivo.Location = new System.Drawing.Point(8, 2);
+            this.PnlArquivo.Location = new System.Drawing.Point(57, 12);
             this.PnlArquivo.Name = "PnlArquivo";
             this.PnlArquivo.Size = new System.Drawing.Size(756, 248);
             this.PnlArquivo.TabIndex = 6;
@@ -546,17 +557,17 @@
             // 
             // TxTLeitura
             // 
-            this.TxTLeitura.Location = new System.Drawing.Point(416, 42);
+            this.TxTLeitura.Location = new System.Drawing.Point(295, 33);
             this.TxTLeitura.Multiline = true;
             this.TxTLeitura.Name = "TxTLeitura";
             this.TxTLeitura.ReadOnly = true;
-            this.TxTLeitura.Size = new System.Drawing.Size(263, 149);
+            this.TxTLeitura.Size = new System.Drawing.Size(221, 129);
             this.TxTLeitura.TabIndex = 3;
             this.TxTLeitura.TextChanged += new System.EventHandler(this.TxTLeitura_TextChanged);
             // 
             // BtnLer
             // 
-            this.BtnLer.Location = new System.Drawing.Point(524, 205);
+            this.BtnLer.Location = new System.Drawing.Point(350, 187);
             this.BtnLer.Name = "BtnLer";
             this.BtnLer.Size = new System.Drawing.Size(75, 23);
             this.BtnLer.TabIndex = 2;
@@ -567,14 +578,14 @@
             // TxtEscrita
             // 
             this.TxtEscrita.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
-            this.TxtEscrita.Location = new System.Drawing.Point(53, 58);
+            this.TxtEscrita.Location = new System.Drawing.Point(42, 33);
             this.TxtEscrita.Name = "TxtEscrita";
             this.TxtEscrita.Size = new System.Drawing.Size(196, 26);
             this.TxtEscrita.TabIndex = 1;
             // 
             // BtnEscrita
             // 
-            this.BtnEscrita.Location = new System.Drawing.Point(111, 197);
+            this.BtnEscrita.Location = new System.Drawing.Point(87, 187);
             this.BtnEscrita.Name = "BtnEscrita";
             this.BtnEscrita.Size = new System.Drawing.Size(75, 23);
             this.BtnEscrita.TabIndex = 0;
@@ -582,16 +593,239 @@
             this.BtnEscrita.UseVisualStyleBackColor = true;
             this.BtnEscrita.Click += new System.EventHandler(this.BtnEscrita_Click);
             // 
+            // BtnTelefone
+            // 
+            this.BtnTelefone.Location = new System.Drawing.Point(498, 263);
+            this.BtnTelefone.Name = "BtnTelefone";
+            this.BtnTelefone.Size = new System.Drawing.Size(75, 23);
+            this.BtnTelefone.TabIndex = 15;
+            this.BtnTelefone.Text = "Atualizar telefone.";
+            this.BtnTelefone.UseVisualStyleBackColor = true;
+            this.BtnTelefone.Click += new System.EventHandler(this.BtnTelefone_Click);
+            // 
+            // Pnl_Atualiza
+            // 
+            this.Pnl_Atualiza.Controls.Add(this.label10);
+            this.Pnl_Atualiza.Controls.Add(this.label9);
+            this.Pnl_Atualiza.Controls.Add(this.Txt_Up_Telefone);
+            this.Pnl_Atualiza.Controls.Add(this.Txt_Up_Cpf);
+            this.Pnl_Atualiza.Controls.Add(this.Btn_Atualizar);
+            this.Pnl_Atualiza.Location = new System.Drawing.Point(20, 12);
+            this.Pnl_Atualiza.Name = "Pnl_Atualiza";
+            this.Pnl_Atualiza.Size = new System.Drawing.Size(769, 245);
+            this.Pnl_Atualiza.TabIndex = 16;
+            this.Pnl_Atualiza.Visible = false;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
+            this.label10.Location = new System.Drawing.Point(11, 77);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(77, 20);
+            this.label10.TabIndex = 4;
+            this.label10.Text = "Telefone.";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
+            this.label9.Location = new System.Drawing.Point(16, 15);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(42, 20);
+            this.label9.TabIndex = 3;
+            this.label9.Text = "CPF";
+            // 
+            // Txt_Up_Telefone
+            // 
+            this.Txt_Up_Telefone.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
+            this.Txt_Up_Telefone.Location = new System.Drawing.Point(101, 77);
+            this.Txt_Up_Telefone.Name = "Txt_Up_Telefone";
+            this.Txt_Up_Telefone.Size = new System.Drawing.Size(222, 26);
+            this.Txt_Up_Telefone.TabIndex = 2;
+            // 
+            // Txt_Up_Cpf
+            // 
+            this.Txt_Up_Cpf.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
+            this.Txt_Up_Cpf.Location = new System.Drawing.Point(101, 13);
+            this.Txt_Up_Cpf.Name = "Txt_Up_Cpf";
+            this.Txt_Up_Cpf.Size = new System.Drawing.Size(222, 26);
+            this.Txt_Up_Cpf.TabIndex = 1;
+            // 
+            // Btn_Atualizar
+            // 
+            this.Btn_Atualizar.Location = new System.Drawing.Point(101, 167);
+            this.Btn_Atualizar.Name = "Btn_Atualizar";
+            this.Btn_Atualizar.Size = new System.Drawing.Size(90, 28);
+            this.Btn_Atualizar.TabIndex = 0;
+            this.Btn_Atualizar.Text = "Atualizar.";
+            this.Btn_Atualizar.UseVisualStyleBackColor = true;
+            this.Btn_Atualizar.Click += new System.EventHandler(this.Btn_Atualizar_Click);
+            // 
+            // Pnl_Monitor
+            // 
+            this.Pnl_Monitor.Controls.Add(this.Btn_Cadastro_Monitor);
+            this.Pnl_Monitor.Controls.Add(this.label16);
+            this.Pnl_Monitor.Controls.Add(this.label15);
+            this.Pnl_Monitor.Controls.Add(this.label14);
+            this.Pnl_Monitor.Controls.Add(this.label13);
+            this.Pnl_Monitor.Controls.Add(this.label12);
+            this.Pnl_Monitor.Controls.Add(this.label11);
+            this.Pnl_Monitor.Controls.Add(this.Txt_Monitor_Cargah);
+            this.Pnl_Monitor.Controls.Add(this.Txt_Monitor_Diciplina);
+            this.Pnl_Monitor.Controls.Add(this.TxT_Monitor_Telefone);
+            this.Pnl_Monitor.Controls.Add(this.Txt_monitor_Rg);
+            this.Pnl_Monitor.Controls.Add(this.Txt_Monitor_Cpf);
+            this.Pnl_Monitor.Controls.Add(this.Txt_Monitor_Nome);
+            this.Pnl_Monitor.Location = new System.Drawing.Point(12, 8);
+            this.Pnl_Monitor.Name = "Pnl_Monitor";
+            this.Pnl_Monitor.Size = new System.Drawing.Size(784, 242);
+            this.Pnl_Monitor.TabIndex = 5;
+            this.Pnl_Monitor.Visible = false;
+            // 
+            // Btn_Cadastro_Monitor
+            // 
+            this.Btn_Cadastro_Monitor.Location = new System.Drawing.Point(83, 161);
+            this.Btn_Cadastro_Monitor.Name = "Btn_Cadastro_Monitor";
+            this.Btn_Cadastro_Monitor.Size = new System.Drawing.Size(75, 23);
+            this.Btn_Cadastro_Monitor.TabIndex = 14;
+            this.Btn_Cadastro_Monitor.Text = "Cadastro";
+            this.Btn_Cadastro_Monitor.UseVisualStyleBackColor = true;
+            this.Btn_Cadastro_Monitor.Click += new System.EventHandler(this.Btn_Cadastro_Monitor_Click);
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
+            this.label16.Location = new System.Drawing.Point(311, 22);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(73, 20);
+            this.label16.TabIndex = 13;
+            this.label16.Text = "Telefone";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
+            this.label15.Location = new System.Drawing.Point(311, 122);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(76, 20);
+            this.label15.TabIndex = 12;
+            this.label15.Text = "Carga H.";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
+            this.label14.Location = new System.Drawing.Point(311, 72);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(74, 20);
+            this.label14.TabIndex = 11;
+            this.label14.Text = "Diciplina";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
+            this.label13.Location = new System.Drawing.Point(1, 122);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(34, 20);
+            this.label13.TabIndex = 10;
+            this.label13.Text = "RG";
+            this.label13.Click += new System.EventHandler(this.label13_Click);
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
+            this.label12.Location = new System.Drawing.Point(3, 72);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(42, 20);
+            this.label12.TabIndex = 9;
+            this.label12.Text = "CPF";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
+            this.label11.Location = new System.Drawing.Point(1, 19);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(53, 20);
+            this.label11.TabIndex = 8;
+            this.label11.Text = "Nome";
+            // 
+            // Txt_Monitor_Cargah
+            // 
+            this.Txt_Monitor_Cargah.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
+            this.Txt_Monitor_Cargah.Location = new System.Drawing.Point(398, 122);
+            this.Txt_Monitor_Cargah.Name = "Txt_Monitor_Cargah";
+            this.Txt_Monitor_Cargah.Size = new System.Drawing.Size(222, 26);
+            this.Txt_Monitor_Cargah.TabIndex = 7;
+            // 
+            // Txt_Monitor_Diciplina
+            // 
+            this.Txt_Monitor_Diciplina.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
+            this.Txt_Monitor_Diciplina.Location = new System.Drawing.Point(398, 72);
+            this.Txt_Monitor_Diciplina.Name = "Txt_Monitor_Diciplina";
+            this.Txt_Monitor_Diciplina.Size = new System.Drawing.Size(222, 26);
+            this.Txt_Monitor_Diciplina.TabIndex = 6;
+            // 
+            // TxT_Monitor_Telefone
+            // 
+            this.TxT_Monitor_Telefone.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
+            this.TxT_Monitor_Telefone.Location = new System.Drawing.Point(398, 19);
+            this.TxT_Monitor_Telefone.Name = "TxT_Monitor_Telefone";
+            this.TxT_Monitor_Telefone.Size = new System.Drawing.Size(222, 26);
+            this.TxT_Monitor_Telefone.TabIndex = 5;
+            // 
+            // Txt_monitor_Rg
+            // 
+            this.Txt_monitor_Rg.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
+            this.Txt_monitor_Rg.Location = new System.Drawing.Point(83, 116);
+            this.Txt_monitor_Rg.Name = "Txt_monitor_Rg";
+            this.Txt_monitor_Rg.Size = new System.Drawing.Size(222, 26);
+            this.Txt_monitor_Rg.TabIndex = 4;
+            // 
+            // Txt_Monitor_Cpf
+            // 
+            this.Txt_Monitor_Cpf.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
+            this.Txt_Monitor_Cpf.Location = new System.Drawing.Point(83, 72);
+            this.Txt_Monitor_Cpf.Name = "Txt_Monitor_Cpf";
+            this.Txt_Monitor_Cpf.Size = new System.Drawing.Size(222, 26);
+            this.Txt_Monitor_Cpf.TabIndex = 3;
+            // 
+            // Txt_Monitor_Nome
+            // 
+            this.Txt_Monitor_Nome.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
+            this.Txt_Monitor_Nome.Location = new System.Drawing.Point(83, 13);
+            this.Txt_Monitor_Nome.Name = "Txt_Monitor_Nome";
+            this.Txt_Monitor_Nome.Size = new System.Drawing.Size(222, 26);
+            this.Txt_Monitor_Nome.TabIndex = 2;
+            // 
+            // Btn_Cad_Monitor
+            // 
+            this.Btn_Cad_Monitor.Location = new System.Drawing.Point(579, 263);
+            this.Btn_Cad_Monitor.Name = "Btn_Cad_Monitor";
+            this.Btn_Cad_Monitor.Size = new System.Drawing.Size(75, 23);
+            this.Btn_Cad_Monitor.TabIndex = 17;
+            this.Btn_Cad_Monitor.Text = "C.Monitor";
+            this.Btn_Cad_Monitor.UseVisualStyleBackColor = true;
+            this.Btn_Cad_Monitor.Click += new System.EventHandler(this.Btn_Cad_Monitor_Click);
+            // 
             // cadastro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(789, 290);
+            this.ClientSize = new System.Drawing.Size(692, 301);
+            this.Controls.Add(this.Btn_Cad_Monitor);
+            this.Controls.Add(this.Pnl_Monitor);
+            this.Controls.Add(this.Pnl_Atualiza);
+            this.Controls.Add(this.BtnTelefone);
             this.Controls.Add(this.PnlArquivo);
             this.Controls.Add(this.BtnArquivo);
-            this.Controls.Add(this.PnlVisualisa);
             this.Controls.Add(this.PnlMatricula);
+            this.Controls.Add(this.PnlVisualisa);
             this.Controls.Add(this.PnlCMatricula);
             this.Controls.Add(this.PnlCadastrar);
             this.Controls.Add(this.PnlCursos);
@@ -625,6 +859,10 @@
             this.PnlMatricula.PerformLayout();
             this.PnlArquivo.ResumeLayout(false);
             this.PnlArquivo.PerformLayout();
+            this.Pnl_Atualiza.ResumeLayout(false);
+            this.Pnl_Atualiza.PerformLayout();
+            this.Pnl_Monitor.ResumeLayout(false);
+            this.Pnl_Monitor.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -645,7 +883,6 @@
         private System.Windows.Forms.Label RG;
         private System.Windows.Forms.Label Telefone;
         private System.Windows.Forms.Label nome;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button Enviar;
         private System.Windows.Forms.TextBox TxtCpf;
         private System.Windows.Forms.TextBox TxtRg;
@@ -683,6 +920,28 @@
         private System.Windows.Forms.Button BtnEscrita;
         private System.Windows.Forms.Button BtnLer;
         private System.Windows.Forms.TextBox TxTLeitura;
+        private System.Windows.Forms.Button BtnTelefone;
+        private System.Windows.Forms.Panel Pnl_Atualiza;
+        private System.Windows.Forms.TextBox Txt_Up_Telefone;
+        private System.Windows.Forms.TextBox Txt_Up_Cpf;
+        private System.Windows.Forms.Button Btn_Atualizar;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Panel Pnl_Monitor;
+        private System.Windows.Forms.Button Btn_Cad_Monitor;
+        private System.Windows.Forms.TextBox Txt_Monitor_Cpf;
+        private System.Windows.Forms.TextBox Txt_Monitor_Nome;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TextBox Txt_Monitor_Cargah;
+        private System.Windows.Forms.TextBox Txt_Monitor_Diciplina;
+        private System.Windows.Forms.TextBox TxT_Monitor_Telefone;
+        private System.Windows.Forms.TextBox Txt_monitor_Rg;
+        private System.Windows.Forms.Button Btn_Cadastro_Monitor;
     }
 }
 
