@@ -18,7 +18,7 @@ namespace TrabalhoAlg3
             }
             set
             {
-                _mDisciplina = disciplina;
+                _mDisciplina = value;
             }
         }
     }

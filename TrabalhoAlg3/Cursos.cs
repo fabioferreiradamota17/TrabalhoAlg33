@@ -19,7 +19,7 @@ namespace TrabalhoAlg3
             }
             set
             {
-                _nome = nome;
+                _nome = value;
             }
         }
 
@@ -31,7 +31,7 @@ namespace TrabalhoAlg3
             }
             set
             {
-                _carga = carga;
+                _carga = value;
             }
         }
     }
