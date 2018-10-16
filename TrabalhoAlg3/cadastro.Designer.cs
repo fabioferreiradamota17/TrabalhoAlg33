@@ -20,6 +20,7 @@
             base.Dispose(disposing);
         }
 
+
         #region Código gerado pelo Windows Form Designer
 
         /// <summary>
