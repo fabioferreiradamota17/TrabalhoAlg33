@@ -355,45 +355,46 @@ namespace TrabalhoAlg3
 
         private void Btn_Cadastro_Monitor_Click(object sender, EventArgs e)
         {
-            if (Txt_Monitor_Cargah.Text != "")
+
+            try
             {
+                Monitor Cmonitor = new Monitor();
+                Conexão conect = new Conexão();
+                Cmonitor.CargaHoraria = Convert.ToInt32(Txt_Monitor_Cargah.Text);
                 try
                 {
-                    Monitor Cmonitor = new Monitor();
-                    Conexão conect = new Conexão();
-                    Cmonitor.CargaHoraria = Convert.ToInt32(Txt_Monitor_Cargah.Text);
-                    try
+
+                    Cmonitor.cpf = Txt_Monitor_Cpf.Text;
+                    Cmonitor.rg = Txt_monitor_Rg.Text;
+                    Cmonitor.telefone = TxT_Monitor_Telefone.Text;
+                    Cmonitor.disciplina = Txt_Monitor_Diciplina.Text;
+
+                    Cmonitor.nome = Txt_Monitor_Nome.Text;
+                    if (Cmonitor.cpf != "" && Cmonitor.rg != "" && Cmonitor.telefone != "" && Cmonitor.disciplina != "" && Cmonitor.CargaHoraria != 0 && Cmonitor.nome != "")
                     {
-
-                        Cmonitor.cpf = Txt_Monitor_Cpf.Text;
-                        Cmonitor.rg = Txt_monitor_Rg.Text;
-                        Cmonitor.telefone = TxT_Monitor_Telefone.Text;
-                        Cmonitor.disciplina = Txt_Monitor_Diciplina.Text;
-
-                        Cmonitor.nome = Txt_Monitor_Nome.Text;
-                        if (Cmonitor.cpf != "" && Cmonitor.rg != "" && Cmonitor.telefone != "" && Cmonitor.disciplina != "" && Cmonitor.CargaHoraria != 0 && Cmonitor.nome != "")
-                        {
 
                         conect.Cadastrar_Monitor(Cmonitor);
-                        }
-                        else
-                        {
-                            MessageBox.Show("preencha todos os campos.");
-                        }
-                        MessageBox.Show("Cadastrado com sucesso");
+                    MessageBox.Show("Cadastrado com sucesso");
                     }
-                    catch (Exception)
+                    else
                     {
-
+                        MessageBox.Show("preencha todos os campos.");
                     }
-
                 }
-                catch (Exception ex)
+                catch (Exception)
                 {
+                    MessageBox.Show("preencha todos os campos corretamente.");
 
                 }
 
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show("preencha os campos corretamente.");
+
+            }
+
         }
+
     }
 }
