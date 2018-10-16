@@ -60,8 +60,7 @@ namespace TrabalhoAlg3//carlos
                 sqlcon.Dispose();
                 sqlcon.Close();
                 return tabela;
-
-
+                
             }
             catch (Exception)
             {
