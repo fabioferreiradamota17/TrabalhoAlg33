@@ -12,7 +12,8 @@ namespace TrabalhoAlg3
     {
         public string Ler()
         {
-            string Caminho = @"C:\Users\fabio\Desktop\Git\FabioDev\TrabalhoAlg33\Escrita.txt";
+            string Caminho = @"C:\Users\Carlos Ramon\source\repos\TrabalhoAlg33\Escrita.txt";
+
             string Leitura = File.ReadAllText(Caminho);
             return Leitura;
         }
