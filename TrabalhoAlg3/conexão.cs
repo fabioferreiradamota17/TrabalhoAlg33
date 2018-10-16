@@ -13,11 +13,11 @@ namespace TrabalhoAlg3
 
     {
         SqlConnection sqlcon = null;
-        private string StrCon = "Data Source=DESKTOP-BDHQ8NC\\FABIO;" +"Initial Catalog=BANCOFABIO;" +"User id=sa;" +"Password=612914;";
-        
+        private string StrCon = "Data Source=DESKTOP-BDHQ8NC\\FABIO;" + "Initial Catalog=BANCOFABIO;" + "User id=sa;" + "Password=612914;";
+
         string StrSql = string.Empty;
 
-        public void SalvarCadastro(string Nome,string Cpf, string Rg,string Telefone)
+        public void SalvarCadastro(string Nome, string Cpf, string Rg, string Telefone)
         {
             StrSql = "insert into cliente (Nome_cliente,Cpf,Rg,Telefone) values (@Nome,@Cpf,@Rg,@Telefone)";
             sqlcon = new SqlConnection(StrCon);
@@ -94,31 +94,31 @@ namespace TrabalhoAlg3
             }
 
         }
-            public void Cancelar(string id_curso, string Cpf)
+        public void Cancelar(string id_curso, string Cpf)
+        {
+            StrSql = "delete CursosMatriculados where Id_Curso = @id_Curso and cpf=@cpf";
+            sqlcon = new SqlConnection(StrCon);
+            SqlCommand Comando = new SqlCommand(StrSql, sqlcon);
+            Comando.Parameters.Add("@id_Curso", int.Parse(id_curso));
+            Comando.Parameters.Add("@Cpf", Cpf);
+
+            try
             {
-                StrSql = "delete CursosMatriculados where Id_Curso = @id_Curso and cpf=@cpf";
-                sqlcon = new SqlConnection(StrCon);
-                SqlCommand Comando = new SqlCommand(StrSql, sqlcon);
-                Comando.Parameters.Add("@id_Curso", int.Parse(id_curso));
-                Comando.Parameters.Add("@Cpf", Cpf);
-               
-                try
-                {
-                    sqlcon.Open();
-                    Comando.ExecuteNonQuery();
-                }
-                catch (Exception)
-                {
+                sqlcon.Open();
+                Comando.ExecuteNonQuery();
+            }
+            catch (Exception)
+            {
 
-                    throw;
-                }
-
-
-
-
+                throw;
             }
 
-        public void matricular(string cpf,string codigo)
+
+
+
+        }
+
+        public void matricular(string cpf, string codigo)
         {
             StrSql = "insert into CursosMatriculados(nome_curso,nome_professor,Carga_Horaria,Cpf,Id_Curso) values ((select Nome_Curso from Curso where Id_Curso= @Id_Curso),(select Nome_Professor from Curso where Id_Curso= @Id_Curso),(select Carga_Horaria from Curso where Id_Curso= @Id_Curso), @cpf,@id_curso)";
             sqlcon = new SqlConnection(StrCon);

@@ -5,16 +5,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-
 namespace TrabalhoAlg3
 {
-    class Leitura
+    class Escrita
     {
-        public string Ler()
+        public void Escrever (string escreve)
         {
             string Caminho = @"C:\Users\fabio\Desktop\Git\FabioDev\TrabalhoAlg33\Escrita.txt";
-            string Leitura = File.ReadAllText(Caminho);
-            return Leitura;
+            File.WriteAllText(Caminho, escreve);
         }
+
     }
 }

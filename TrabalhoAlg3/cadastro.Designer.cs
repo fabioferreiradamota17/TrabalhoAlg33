@@ -58,25 +58,31 @@
             this.PnlInicial = new System.Windows.Forms.Panel();
             this.TxtInicial = new System.Windows.Forms.TextBox();
             this.PnlVisualisa = new System.Windows.Forms.Panel();
+            this.GridConsultas = new System.Windows.Forms.DataGridView();
             this.LblConsulta = new System.Windows.Forms.Label();
             this.BtnConsulta = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.PnlCMatricula = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.PnlMatricula = new System.Windows.Forms.Panel();
-            this.GridConsultas = new System.Windows.Forms.DataGridView();
-            this.label3 = new System.Windows.Forms.Label();
-            this.TXT_CPFM = new System.Windows.Forms.TextBox();
-            this.TXT_CODIGOM = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.Btn_Matricula = new System.Windows.Forms.Button();
             this.Btn_Cancelar = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.Txt_codigo_cancelar = new System.Windows.Forms.TextBox();
             this.TXT_Cpf_Cancelar = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.PnlMatricula = new System.Windows.Forms.Panel();
+            this.Btn_Matricula = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.TXT_CODIGOM = new System.Windows.Forms.TextBox();
+            this.TXT_CPFM = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.BtnArquivo = new System.Windows.Forms.Button();
+            this.PnlArquivo = new System.Windows.Forms.Panel();
+            this.BtnEscrita = new System.Windows.Forms.Button();
+            this.TxtEscrita = new System.Windows.Forms.TextBox();
+            this.BtnLer = new System.Windows.Forms.Button();
+            this.TxTLeitura = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.bANCOFABIODataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cLIENTESBindingSource)).BeginInit();
             this.PnlCadastrar.SuspendLayout();
@@ -86,9 +92,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.cLIENTESBindingSource1)).BeginInit();
             this.PnlInicial.SuspendLayout();
             this.PnlVisualisa.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.GridConsultas)).BeginInit();
             this.PnlCMatricula.SuspendLayout();
             this.PnlMatricula.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.GridConsultas)).BeginInit();
+            this.PnlArquivo.SuspendLayout();
             this.SuspendLayout();
             // 
             // bANCOFABIODataSet
@@ -113,7 +120,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(354, 256);
+            this.button1.Location = new System.Drawing.Point(251, 263);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 0;
@@ -123,7 +130,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(182, 256);
+            this.button2.Location = new System.Drawing.Point(119, 263);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 1;
@@ -133,7 +140,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(532, 256);
+            this.button3.Location = new System.Drawing.Point(370, 263);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 2;
@@ -143,7 +150,7 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(15, 256);
+            this.button4.Location = new System.Drawing.Point(17, 263);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(75, 23);
             this.button4.TabIndex = 3;
@@ -257,7 +264,7 @@
             // 
             // Visualizar
             // 
-            this.Visualizar.Location = new System.Drawing.Point(697, 256);
+            this.Visualizar.Location = new System.Drawing.Point(494, 263);
             this.Visualizar.Name = "Visualizar";
             this.Visualizar.Size = new System.Drawing.Size(75, 23);
             this.Visualizar.TabIndex = 5;
@@ -335,6 +342,19 @@
             this.PnlVisualisa.TabIndex = 11;
             this.PnlVisualisa.Visible = false;
             // 
+            // GridConsultas
+            // 
+            this.GridConsultas.AllowUserToOrderColumns = true;
+            this.GridConsultas.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.GridConsultas.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
+            this.GridConsultas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.GridConsultas.Location = new System.Drawing.Point(215, 49);
+            this.GridConsultas.MinimumSize = new System.Drawing.Size(0, 100);
+            this.GridConsultas.Name = "GridConsultas";
+            this.GridConsultas.Size = new System.Drawing.Size(443, 100);
+            this.GridConsultas.TabIndex = 5;
+            this.GridConsultas.Visible = false;
+            // 
             // LblConsulta
             // 
             this.LblConsulta.AutoSize = true;
@@ -386,93 +406,6 @@
             this.PnlCMatricula.TabIndex = 12;
             this.PnlCMatricula.Visible = false;
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(102, 16);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(75, 13);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "Cancelamento";
-            // 
-            // PnlMatricula
-            // 
-            this.PnlMatricula.Controls.Add(this.Btn_Matricula);
-            this.PnlMatricula.Controls.Add(this.label6);
-            this.PnlMatricula.Controls.Add(this.label5);
-            this.PnlMatricula.Controls.Add(this.TXT_CODIGOM);
-            this.PnlMatricula.Controls.Add(this.TXT_CPFM);
-            this.PnlMatricula.Controls.Add(this.label3);
-            this.PnlMatricula.Location = new System.Drawing.Point(8, 6);
-            this.PnlMatricula.Name = "PnlMatricula";
-            this.PnlMatricula.Size = new System.Drawing.Size(761, 248);
-            this.PnlMatricula.TabIndex = 13;
-            this.PnlMatricula.Visible = false;
-            // 
-            // GridConsultas
-            // 
-            this.GridConsultas.AllowUserToOrderColumns = true;
-            this.GridConsultas.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.GridConsultas.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
-            this.GridConsultas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.GridConsultas.Location = new System.Drawing.Point(215, 49);
-            this.GridConsultas.MinimumSize = new System.Drawing.Size(0, 100);
-            this.GridConsultas.Name = "GridConsultas";
-            this.GridConsultas.Size = new System.Drawing.Size(443, 100);
-            this.GridConsultas.TabIndex = 5;
-            this.GridConsultas.Visible = false;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(14, 21);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(276, 13);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Digite o Cpf e o codigo do curso para efetuar a matricula.";
-            // 
-            // TXT_CPFM
-            // 
-            this.TXT_CPFM.Location = new System.Drawing.Point(76, 54);
-            this.TXT_CPFM.Name = "TXT_CPFM";
-            this.TXT_CPFM.Size = new System.Drawing.Size(100, 20);
-            this.TXT_CPFM.TabIndex = 1;
-            // 
-            // TXT_CODIGOM
-            // 
-            this.TXT_CODIGOM.Location = new System.Drawing.Point(76, 95);
-            this.TXT_CODIGOM.Name = "TXT_CODIGOM";
-            this.TXT_CODIGOM.Size = new System.Drawing.Size(100, 20);
-            this.TXT_CODIGOM.TabIndex = 2;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(24, 103);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(43, 13);
-            this.label5.TabIndex = 3;
-            this.label5.Text = "Código.";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(24, 54);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(30, 13);
-            this.label6.TabIndex = 4;
-            this.label6.Text = "CPF.";
-            // 
-            // Btn_Matricula
-            // 
-            this.Btn_Matricula.Location = new System.Drawing.Point(76, 172);
-            this.Btn_Matricula.Name = "Btn_Matricula";
-            this.Btn_Matricula.Size = new System.Drawing.Size(75, 23);
-            this.Btn_Matricula.TabIndex = 5;
-            this.Btn_Matricula.Text = "Matricular.";
-            this.Btn_Matricula.UseVisualStyleBackColor = true;
-            this.Btn_Matricula.Click += new System.EventHandler(this.Btn_Matricula_Click);
-            // 
             // Btn_Cancelar
             // 
             this.Btn_Cancelar.Location = new System.Drawing.Point(70, 169);
@@ -515,12 +448,148 @@
             this.TXT_Cpf_Cancelar.Size = new System.Drawing.Size(146, 20);
             this.TXT_Cpf_Cancelar.TabIndex = 6;
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(102, 16);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(75, 13);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "Cancelamento";
+            // 
+            // PnlMatricula
+            // 
+            this.PnlMatricula.Controls.Add(this.Btn_Matricula);
+            this.PnlMatricula.Controls.Add(this.label6);
+            this.PnlMatricula.Controls.Add(this.label5);
+            this.PnlMatricula.Controls.Add(this.TXT_CODIGOM);
+            this.PnlMatricula.Controls.Add(this.TXT_CPFM);
+            this.PnlMatricula.Controls.Add(this.label3);
+            this.PnlMatricula.Location = new System.Drawing.Point(8, 6);
+            this.PnlMatricula.Name = "PnlMatricula";
+            this.PnlMatricula.Size = new System.Drawing.Size(761, 248);
+            this.PnlMatricula.TabIndex = 13;
+            this.PnlMatricula.Visible = false;
+            // 
+            // Btn_Matricula
+            // 
+            this.Btn_Matricula.Location = new System.Drawing.Point(76, 172);
+            this.Btn_Matricula.Name = "Btn_Matricula";
+            this.Btn_Matricula.Size = new System.Drawing.Size(75, 23);
+            this.Btn_Matricula.TabIndex = 5;
+            this.Btn_Matricula.Text = "Matricular.";
+            this.Btn_Matricula.UseVisualStyleBackColor = true;
+            this.Btn_Matricula.Click += new System.EventHandler(this.Btn_Matricula_Click);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(24, 54);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(30, 13);
+            this.label6.TabIndex = 4;
+            this.label6.Text = "CPF.";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(24, 103);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(43, 13);
+            this.label5.TabIndex = 3;
+            this.label5.Text = "Código.";
+            // 
+            // TXT_CODIGOM
+            // 
+            this.TXT_CODIGOM.Location = new System.Drawing.Point(76, 95);
+            this.TXT_CODIGOM.Name = "TXT_CODIGOM";
+            this.TXT_CODIGOM.Size = new System.Drawing.Size(100, 20);
+            this.TXT_CODIGOM.TabIndex = 2;
+            // 
+            // TXT_CPFM
+            // 
+            this.TXT_CPFM.Location = new System.Drawing.Point(76, 54);
+            this.TXT_CPFM.Name = "TXT_CPFM";
+            this.TXT_CPFM.Size = new System.Drawing.Size(100, 20);
+            this.TXT_CPFM.TabIndex = 1;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(14, 21);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(276, 13);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Digite o Cpf e o codigo do curso para efetuar a matricula.";
+            // 
+            // BtnArquivo
+            // 
+            this.BtnArquivo.Location = new System.Drawing.Point(621, 263);
+            this.BtnArquivo.Name = "BtnArquivo";
+            this.BtnArquivo.Size = new System.Drawing.Size(75, 23);
+            this.BtnArquivo.TabIndex = 14;
+            this.BtnArquivo.Text = "Arquivo";
+            this.BtnArquivo.UseVisualStyleBackColor = true;
+            this.BtnArquivo.Click += new System.EventHandler(this.BtnArquivo_Click);
+            // 
+            // PnlArquivo
+            // 
+            this.PnlArquivo.Controls.Add(this.TxTLeitura);
+            this.PnlArquivo.Controls.Add(this.BtnLer);
+            this.PnlArquivo.Controls.Add(this.TxtEscrita);
+            this.PnlArquivo.Controls.Add(this.BtnEscrita);
+            this.PnlArquivo.Location = new System.Drawing.Point(8, 2);
+            this.PnlArquivo.Name = "PnlArquivo";
+            this.PnlArquivo.Size = new System.Drawing.Size(756, 248);
+            this.PnlArquivo.TabIndex = 6;
+            this.PnlArquivo.Visible = false;
+            // 
+            // BtnEscrita
+            // 
+            this.BtnEscrita.Location = new System.Drawing.Point(111, 197);
+            this.BtnEscrita.Name = "BtnEscrita";
+            this.BtnEscrita.Size = new System.Drawing.Size(75, 23);
+            this.BtnEscrita.TabIndex = 0;
+            this.BtnEscrita.Text = "Escrever";
+            this.BtnEscrita.UseVisualStyleBackColor = true;
+            this.BtnEscrita.Click += new System.EventHandler(this.BtnEscrita_Click);
+            // 
+            // TxtEscrita
+            // 
+            this.TxtEscrita.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
+            this.TxtEscrita.Location = new System.Drawing.Point(53, 58);
+            this.TxtEscrita.Name = "TxtEscrita";
+            this.TxtEscrita.Size = new System.Drawing.Size(196, 26);
+            this.TxtEscrita.TabIndex = 1;
+            // 
+            // BtnLer
+            // 
+            this.BtnLer.Location = new System.Drawing.Point(524, 205);
+            this.BtnLer.Name = "BtnLer";
+            this.BtnLer.Size = new System.Drawing.Size(75, 23);
+            this.BtnLer.TabIndex = 2;
+            this.BtnLer.Text = "Ler";
+            this.BtnLer.UseVisualStyleBackColor = true;
+            this.BtnLer.Click += new System.EventHandler(this.BtnLer_Click);
+            // 
+            // TxTLeitura
+            // 
+            this.TxTLeitura.Location = new System.Drawing.Point(416, 42);
+            this.TxTLeitura.Multiline = true;
+            this.TxTLeitura.Name = "TxTLeitura";
+            this.TxTLeitura.ReadOnly = true;
+            this.TxTLeitura.Size = new System.Drawing.Size(263, 149);
+            this.TxTLeitura.TabIndex = 3;
+            this.TxTLeitura.TextChanged += new System.EventHandler(this.TxTLeitura_TextChanged);
+            // 
             // cadastro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(789, 282);
+            this.ClientSize = new System.Drawing.Size(789, 290);
+            this.Controls.Add(this.PnlArquivo);
+            this.Controls.Add(this.BtnArquivo);
             this.Controls.Add(this.PnlVisualisa);
             this.Controls.Add(this.PnlMatricula);
             this.Controls.Add(this.PnlCMatricula);
@@ -550,11 +619,13 @@
             this.PnlInicial.PerformLayout();
             this.PnlVisualisa.ResumeLayout(false);
             this.PnlVisualisa.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.GridConsultas)).EndInit();
             this.PnlCMatricula.ResumeLayout(false);
             this.PnlCMatricula.PerformLayout();
             this.PnlMatricula.ResumeLayout(false);
             this.PnlMatricula.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.GridConsultas)).EndInit();
+            this.PnlArquivo.ResumeLayout(false);
+            this.PnlArquivo.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -607,6 +678,12 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox Txt_codigo_cancelar;
         private System.Windows.Forms.TextBox TXT_Cpf_Cancelar;
+        private System.Windows.Forms.Button BtnArquivo;
+        private System.Windows.Forms.Panel PnlArquivo;
+        private System.Windows.Forms.TextBox TxtEscrita;
+        private System.Windows.Forms.Button BtnEscrita;
+        private System.Windows.Forms.Button BtnLer;
+        private System.Windows.Forms.TextBox TxTLeitura;
     }
 }
 
