@@ -10,6 +10,7 @@ using System.Data;
 namespace TrabalhoAlg3
 {
     class Conexão
+
     {
         SqlConnection sqlcon = null;
         private string StrCon = "Data Source=DESKTOP-BDHQ8NC\\FABIO;" +"Initial Catalog=BANCOFABIO;" +"User id=sa;" +"Password=612914;";
