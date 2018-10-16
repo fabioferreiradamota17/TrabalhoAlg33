@@ -7,7 +7,7 @@ using System.Data.SqlClient;
 using System.Data.SqlTypes;
 using System.Data;
 
-namespace TrabalhoAlg3
+namespace TrabalhoAlg3//carlos
 {
     class Conexão
     {
