@@ -79,6 +79,9 @@
     <Compile Include="Escrita.cs" />
     <Compile Include="Leitura.cs" />
     <Compile Include="Monitor.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
     <Compile Include="Professor.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -105,6 +108,8 @@
     <None Include="BANCOFABIODataSet.xss">
       <DependentUpon>BANCOFABIODataSet.xsd</DependentUpon>
     </None>
+    <None Include="bin\Debug\TrabalhoAlg3.exe.config" />
+    <None Include="obj\Release\TrabalhoAlg3.csproj.CoreCompileInputs.cache" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -129,6 +134,13 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\TrabalhoAlg3.exe" />
+    <Content Include="bin\Debug\TrabalhoAlg3.pdb" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Release\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
