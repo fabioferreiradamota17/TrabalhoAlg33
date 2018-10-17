@@ -38,6 +38,7 @@ namespace TrabalhoAlg3
             PnlCMatricula.Visible = true;
             Pnl_Atualiza.Visible = false;
             Pnl_Monitor.Visible = false;
+            PNL_Cadastro_Curso.Visible = false;
             PnlArquivo.Visible = false;
 
         }
@@ -53,6 +54,7 @@ namespace TrabalhoAlg3
             PnlCadastrar.Visible = true;
             Pnl_Atualiza.Visible = false;
             Pnl_Monitor.Visible = false;
+            PNL_Cadastro_Curso.Visible = false;
             PnlArquivo.Visible = false;
 
 
@@ -69,6 +71,7 @@ namespace TrabalhoAlg3
             PnlCursos.Visible = true;
             Pnl_Atualiza.Visible = false;
             Pnl_Monitor.Visible = false;
+            PNL_Cadastro_Curso.Visible = false;
             PnlArquivo.Visible = false;
 
             Conexão conectar = new Conexão();
@@ -96,6 +99,7 @@ namespace TrabalhoAlg3
             PnlVisualisa.Visible = false;
             PnlArquivo.Visible = false;
             Pnl_Monitor.Visible = false;
+            PNL_Cadastro_Curso.Visible = false;
             Pnl_Atualiza.Visible = true;
         }
 
@@ -110,6 +114,7 @@ namespace TrabalhoAlg3
             PnlVisualisa.Visible = false;
             PnlArquivo.Visible = false;
             Pnl_Atualiza.Visible = false;
+            PNL_Cadastro_Curso.Visible = false;
             Pnl_Monitor.Visible = true;
 
         }
@@ -130,6 +135,7 @@ namespace TrabalhoAlg3
             PnlMatricula.Visible = true;
             Pnl_Atualiza.Visible = false;
             Pnl_Monitor.Visible = false;
+            PNL_Cadastro_Curso.Visible = false;
             PnlArquivo.Visible = false;
 
         }
@@ -145,6 +151,7 @@ namespace TrabalhoAlg3
             Pnl_Atualiza.Visible = false;
             PnlVisualisa.Visible = true;
             Pnl_Monitor.Visible = false;
+            PNL_Cadastro_Curso.Visible = false;
             PnlArquivo.Visible = false;
 
         }
@@ -159,7 +166,23 @@ namespace TrabalhoAlg3
             PnlVisualisa.Visible = false;
             Pnl_Atualiza.Visible = false;
             Pnl_Monitor.Visible = false;
+            PNL_Cadastro_Curso.Visible = false;
             PnlArquivo.Visible = true;
+        }
+        private void Btn_Cadastro_Curso_Click(object sender, EventArgs e)
+        {
+            PnlInicial.Visible = false;
+            PnlCursos.Visible = false;
+            PnlMatricula.Visible = false;
+            PnlCMatricula.Visible = false;
+            PnlInicial.Visible = false;
+            PnlCadastrar.Visible = false;
+            PnlVisualisa.Visible = false;
+            Pnl_Atualiza.Visible = false;
+            Pnl_Monitor.Visible = false;
+            PnlArquivo.Visible = false;
+            PNL_Cadastro_Curso.Visible = true;
+
         }
 
 
@@ -340,6 +363,42 @@ namespace TrabalhoAlg3
             catch (Exception ex)
             {
                 MessageBox.Show("preencha os campos corretamente.");
+            }
+        }
+
+        private void Btn_cadastrar_Curso_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Conexão Conectar = new Conexão();
+                Cursos curso = new Cursos();
+                curso.nome = Txt_Curso.Text;
+                curso.carga =Convert.ToInt32(Txt_Carga_h.Text);
+                curso.vagas = Convert.ToInt32(Txt_Vagas.Text);
+                curso.professor = Txt_cadastro_Professor.Text;
+                Conectar.CadastrarCurso(curso);
+                MessageBox.Show("cadastro Comcluido.");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("não foi possivel cadastrar verifique os dados.");
+            }
+        }
+        private void Btn_Cancelar_Click()
+        {
+            Conexão Conectar = new Conexão();
+            Cursos curso = new Cursos();
+            Aluno aluno = new Aluno();
+            try
+            {
+                curso.Id_Curso = Convert.ToInt32(Txt_codigo_cancelar.Text);
+                aluno.cpf = TXT_Cpf_Cancelar.Text;
+                Conectar.Cancelar(curso, aluno);
+                MessageBox.Show("cancelada com sucesso");
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("impossivel cancelar Dados não existem");
             }
         }
     }

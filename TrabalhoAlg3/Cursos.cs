@@ -11,7 +11,7 @@ namespace TrabalhoAlg3
         private string _nome;
         private int _carga;
         private int _vagas;
-        private int _professor;
+        private string _professor;
         private int _id_curso;
 
 
@@ -49,7 +49,7 @@ namespace TrabalhoAlg3
                 _vagas = value;
             }
         }
-        public int professor
+        public string professor
         {
             get
             {

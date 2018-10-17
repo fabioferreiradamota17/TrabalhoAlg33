@@ -140,6 +140,30 @@ namespace TrabalhoAlg3//carlos
             }
 
         }
+        public void CadastrarCurso(Cursos C_curso)
+        {
+            StrSql = "insert into Curso(nome_curso,nome_professor,Carga_Horaria,Numero_vagas) values (@nome_curso,@Nome_Professor,@Carga_Horaria,@Vagas)";
+            sqlcon = new SqlConnection(StrCon);
+            SqlCommand Comando = new SqlCommand(StrSql, sqlcon);
+            Comando.Parameters.Add("@Nome_Curso", C_curso.nome);
+            Comando.Parameters.Add("@Nome_Professor", C_curso.professor);
+            Comando.Parameters.Add("@Vagas", C_curso.vagas);
+            Comando.Parameters.Add("@Carga_Horaria", C_curso.carga);
+
+            try
+            {
+                sqlcon.Open();
+                Comando.ExecuteNonQuery();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+
+
+
+        }
         public void Atualizar_Telefone(Aluno aluno)
         {
             StrSql = "update cliente set Telefone= @telefone where cpf =@cpf";

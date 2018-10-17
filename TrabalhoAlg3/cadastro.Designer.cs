@@ -104,6 +104,17 @@
             this.Txt_Monitor_Cpf = new System.Windows.Forms.TextBox();
             this.Txt_Monitor_Nome = new System.Windows.Forms.TextBox();
             this.Btn_Cad_Monitor = new System.Windows.Forms.Button();
+            this.Btn_Cadastro_Curso = new System.Windows.Forms.Button();
+            this.PNL_Cadastro_Curso = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.Btn_cadastrar_Curso = new System.Windows.Forms.Button();
+            this.Txt_Curso = new System.Windows.Forms.TextBox();
+            this.Txt_Carga_h = new System.Windows.Forms.TextBox();
+            this.Txt_Vagas = new System.Windows.Forms.TextBox();
+            this.Txt_cadastro_Professor = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.bANCOFABIODataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cLIENTESBindingSource)).BeginInit();
             this.PnlCadastrar.SuspendLayout();
@@ -119,6 +130,7 @@
             this.PnlArquivo.SuspendLayout();
             this.Pnl_Atualiza.SuspendLayout();
             this.Pnl_Monitor.SuspendLayout();
+            this.PNL_Cadastro_Curso.SuspendLayout();
             this.SuspendLayout();
             // 
             // bANCOFABIODataSet
@@ -812,12 +824,115 @@
             this.Btn_Cad_Monitor.UseVisualStyleBackColor = true;
             this.Btn_Cad_Monitor.Click += new System.EventHandler(this.Btn_Cad_Monitor_Click);
             // 
+            // Btn_Cadastro_Curso
+            // 
+            this.Btn_Cadastro_Curso.Location = new System.Drawing.Point(660, 263);
+            this.Btn_Cadastro_Curso.Name = "Btn_Cadastro_Curso";
+            this.Btn_Cadastro_Curso.Size = new System.Drawing.Size(75, 23);
+            this.Btn_Cadastro_Curso.TabIndex = 18;
+            this.Btn_Cadastro_Curso.Text = "C. Curso";
+            this.Btn_Cadastro_Curso.UseVisualStyleBackColor = true;
+            this.Btn_Cadastro_Curso.Click += new System.EventHandler(this.Btn_Cadastro_Curso_Click);
+            // 
+            // PNL_Cadastro_Curso
+            // 
+            this.PNL_Cadastro_Curso.Controls.Add(this.Txt_cadastro_Professor);
+            this.PNL_Cadastro_Curso.Controls.Add(this.Txt_Vagas);
+            this.PNL_Cadastro_Curso.Controls.Add(this.Txt_Carga_h);
+            this.PNL_Cadastro_Curso.Controls.Add(this.Txt_Curso);
+            this.PNL_Cadastro_Curso.Controls.Add(this.Btn_cadastrar_Curso);
+            this.PNL_Cadastro_Curso.Controls.Add(this.label19);
+            this.PNL_Cadastro_Curso.Controls.Add(this.label18);
+            this.PNL_Cadastro_Curso.Controls.Add(this.label17);
+            this.PNL_Cadastro_Curso.Controls.Add(this.label1);
+            this.PNL_Cadastro_Curso.Location = new System.Drawing.Point(12, 5);
+            this.PNL_Cadastro_Curso.Name = "PNL_Cadastro_Curso";
+            this.PNL_Cadastro_Curso.Size = new System.Drawing.Size(863, 255);
+            this.PNL_Cadastro_Curso.TabIndex = 19;
+            this.PNL_Cadastro_Curso.Visible = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(25, 20);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(34, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Curso";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(28, 52);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(72, 13);
+            this.label17.TabIndex = 1;
+            this.label17.Text = "Carga Horaria";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(28, 84);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(37, 13);
+            this.label18.TabIndex = 2;
+            this.label18.Text = "Vagas";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(25, 115);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(51, 13);
+            this.label19.TabIndex = 3;
+            this.label19.Text = "Professor";
+            // 
+            // Btn_cadastrar_Curso
+            // 
+            this.Btn_cadastrar_Curso.Location = new System.Drawing.Point(20, 185);
+            this.Btn_cadastrar_Curso.Name = "Btn_cadastrar_Curso";
+            this.Btn_cadastrar_Curso.Size = new System.Drawing.Size(75, 23);
+            this.Btn_cadastrar_Curso.TabIndex = 5;
+            this.Btn_cadastrar_Curso.Text = "Cadastrar";
+            this.Btn_cadastrar_Curso.UseVisualStyleBackColor = true;
+            this.Btn_cadastrar_Curso.Click += new System.EventHandler(this.Btn_cadastrar_Curso_Click);
+            // 
+            // Txt_Curso
+            // 
+            this.Txt_Curso.Location = new System.Drawing.Point(126, 21);
+            this.Txt_Curso.Name = "Txt_Curso";
+            this.Txt_Curso.Size = new System.Drawing.Size(100, 20);
+            this.Txt_Curso.TabIndex = 6;
+            // 
+            // Txt_Carga_h
+            // 
+            this.Txt_Carga_h.Location = new System.Drawing.Point(126, 52);
+            this.Txt_Carga_h.Name = "Txt_Carga_h";
+            this.Txt_Carga_h.Size = new System.Drawing.Size(100, 20);
+            this.Txt_Carga_h.TabIndex = 7;
+            // 
+            // Txt_Vagas
+            // 
+            this.Txt_Vagas.Location = new System.Drawing.Point(126, 81);
+            this.Txt_Vagas.Name = "Txt_Vagas";
+            this.Txt_Vagas.Size = new System.Drawing.Size(100, 20);
+            this.Txt_Vagas.TabIndex = 8;
+            // 
+            // Txt_cadastro_Professor
+            // 
+            this.Txt_cadastro_Professor.Location = new System.Drawing.Point(126, 113);
+            this.Txt_cadastro_Professor.Name = "Txt_cadastro_Professor";
+            this.Txt_cadastro_Professor.Size = new System.Drawing.Size(100, 20);
+            this.Txt_cadastro_Professor.TabIndex = 9;
+            // 
             // cadastro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(692, 301);
+            this.ClientSize = new System.Drawing.Size(751, 301);
+            this.Controls.Add(this.PNL_Cadastro_Curso);
+            this.Controls.Add(this.Btn_Cadastro_Curso);
             this.Controls.Add(this.Btn_Cad_Monitor);
             this.Controls.Add(this.Pnl_Monitor);
             this.Controls.Add(this.Pnl_Atualiza);
@@ -863,6 +978,8 @@
             this.Pnl_Atualiza.PerformLayout();
             this.Pnl_Monitor.ResumeLayout(false);
             this.Pnl_Monitor.PerformLayout();
+            this.PNL_Cadastro_Curso.ResumeLayout(false);
+            this.PNL_Cadastro_Curso.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -942,6 +1059,17 @@
         private System.Windows.Forms.TextBox TxT_Monitor_Telefone;
         private System.Windows.Forms.TextBox Txt_monitor_Rg;
         private System.Windows.Forms.Button Btn_Cadastro_Monitor;
+        private System.Windows.Forms.Button Btn_Cadastro_Curso;
+        private System.Windows.Forms.Panel PNL_Cadastro_Curso;
+        private System.Windows.Forms.TextBox Txt_cadastro_Professor;
+        private System.Windows.Forms.TextBox Txt_Vagas;
+        private System.Windows.Forms.TextBox Txt_Carga_h;
+        private System.Windows.Forms.TextBox Txt_Curso;
+        private System.Windows.Forms.Button Btn_cadastrar_Curso;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label1;
     }
 }
 
