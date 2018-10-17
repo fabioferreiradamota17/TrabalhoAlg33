@@ -38,3 +38,13 @@ C:\Users\Carlos Ramon\Source\Repos\TrabalhoAlg33\TrabalhoAlg3\obj\Debug\Trabalho
 C:\Users\Carlos Ramon\Source\Repos\TrabalhoAlg33\TrabalhoAlg3\obj\Debug\TrabalhoAlg3.csproj.CoreCompileInputs.cache
 C:\Users\Carlos Ramon\Source\Repos\TrabalhoAlg33\TrabalhoAlg3\obj\Debug\TrabalhoAlg3.exe
 C:\Users\Carlos Ramon\Source\Repos\TrabalhoAlg33\TrabalhoAlg3\obj\Debug\TrabalhoAlg3.pdb
+C:\Users\fabio\Desktop\Git\FabioDev\Fabio_Ferreira_Da_Mota_RGA_201711316046_AtividadeFinal\TrabalhoAlg3\TrabalhoAlg3\bin\Debug\TrabalhoAlg3.exe.config
+C:\Users\fabio\Desktop\Git\FabioDev\Fabio_Ferreira_Da_Mota_RGA_201711316046_AtividadeFinal\TrabalhoAlg3\TrabalhoAlg3\bin\Debug\TrabalhoAlg3.exe
+C:\Users\fabio\Desktop\Git\FabioDev\Fabio_Ferreira_Da_Mota_RGA_201711316046_AtividadeFinal\TrabalhoAlg3\TrabalhoAlg3\bin\Debug\TrabalhoAlg3.pdb
+C:\Users\fabio\Desktop\Git\FabioDev\Fabio_Ferreira_Da_Mota_RGA_201711316046_AtividadeFinal\TrabalhoAlg3\TrabalhoAlg3\obj\Debug\TrabalhoAlg3.csprojResolveAssemblyReference.cache
+C:\Users\fabio\Desktop\Git\FabioDev\Fabio_Ferreira_Da_Mota_RGA_201711316046_AtividadeFinal\TrabalhoAlg3\TrabalhoAlg3\obj\Debug\TrabalhoAlg3.cadastro.resources
+C:\Users\fabio\Desktop\Git\FabioDev\Fabio_Ferreira_Da_Mota_RGA_201711316046_AtividadeFinal\TrabalhoAlg3\TrabalhoAlg3\obj\Debug\TrabalhoAlg3.Properties.Resources.resources
+C:\Users\fabio\Desktop\Git\FabioDev\Fabio_Ferreira_Da_Mota_RGA_201711316046_AtividadeFinal\TrabalhoAlg3\TrabalhoAlg3\obj\Debug\TrabalhoAlg3.csproj.GenerateResource.cache
+C:\Users\fabio\Desktop\Git\FabioDev\Fabio_Ferreira_Da_Mota_RGA_201711316046_AtividadeFinal\TrabalhoAlg3\TrabalhoAlg3\obj\Debug\TrabalhoAlg3.csproj.CoreCompileInputs.cache
+C:\Users\fabio\Desktop\Git\FabioDev\Fabio_Ferreira_Da_Mota_RGA_201711316046_AtividadeFinal\TrabalhoAlg3\TrabalhoAlg3\obj\Debug\TrabalhoAlg3.exe
+C:\Users\fabio\Desktop\Git\FabioDev\Fabio_Ferreira_Da_Mota_RGA_201711316046_AtividadeFinal\TrabalhoAlg3\TrabalhoAlg3\obj\Debug\TrabalhoAlg3.pdb
