@@ -14,8 +14,8 @@ namespace TrabalhoAlg3//carlos
     {
         SqlConnection sqlcon = null;
         //Banco Fabio -> 
-        private string StrCon = "Data Source=DESKTOP-BDHQ8NC\\FABIO;" + "Initial Catalog=BANCOFABIO;" + "User id=sa;" + "Password=612914;";
-        //private string StrCon = "Data Source=DESKTOP-6N7BJMH;" + "Initial Catalog=alg3;" + "User id=sa;" + "Password=vssql;";
+        //private string StrCon = "Data Source=DESKTOP-BDHQ8NC\\FABIO;" + "Initial Catalog=BANCOFABIO;" + "User id=sa;" + "Password=612914;";
+        private string StrCon = "Data Source=DESKTOP-6N7BJMH;" + "Initial Catalog=BANCOFABIO;" + "User id=sa;" + "Password=vssql;";
 
         string StrSql = string.Empty;
 
